@@ -1,2 +1,2 @@
 # Apothex
-Pharmacy Store System
+Pharmacy Store System - Last version 2012-12-01
