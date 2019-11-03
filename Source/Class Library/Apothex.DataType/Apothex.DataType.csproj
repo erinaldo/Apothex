@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC6E9DE4-BF60-4A46-8728-99ABD2060BA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apothex.DataType</RootNamespace>
+    <AssemblyName>Apothex.DataType</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Apothex.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\bin\Debug\Apothex.DataType.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\bin\Release\Apothex.DataType.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zek">
+      <HintPath>..\..\..\..\Zek\bin\Release\Zek.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DS_CardPointTransfer.cs">
+      <DependentUpon>DS_CardPointTransfer.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_CardPointTransfer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CardPointTransfer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_KalinaGeorgia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_KalinaGeorgia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Neopharmi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Neopharmi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ConfigName.cs" />
+    <Compile Include="DS_Accounting.cs">
+      <DependentUpon>DS_Accounting.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Accounting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Accounting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Aversi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Aversi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Barcode.cs">
+      <DependentUpon>DS_Barcode.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Barcode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Barcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Branch.cs">
+      <DependentUpon>DS_Branch.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Branch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Branch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Card.cs">
+      <DependentUpon>DS_Card.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Card.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Card.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Cashbox.cs">
+      <DependentUpon>DS_Cashbox.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Cashbox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Cashbox.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_CloseDay.cs">
+      <DependentUpon>DS_CloseDay.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_CloseDay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CloseDay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Configuration.cs">
+      <DependentUpon>DS_Configuration.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Configuration.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Configuration.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Currency.cs">
+      <DependentUpon>DS_Currency.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Currency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Currency.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_CurrencyRate.cs">
+      <DependentUpon>DS_CurrencyRate.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_CurrencyRate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CurrencyRate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GPC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GPC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Import.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Import.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Medicament.cs">
+      <DependentUpon>DS_Medicament.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Medicament.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Medicament.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Offline.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Offline.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Operation.cs">
+      <DependentUpon>DS_Operation.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Operation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Operation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Product.cs">
+      <DependentUpon>DS_Product.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Product.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Product.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductDistribution.cs">
+      <DependentUpon>DS_ProductDistribution.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_ProductDistribution.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductDistribution.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductDistributionDetailInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductDistributionDetailInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductDistributionDetailList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductDistributionDetailList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductDistributionHeader.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductDistributionHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductListPriceHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductListPriceHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductLocation.cs">
+      <DependentUpon>DS_ProductLocation.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_ProductLocation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductLocation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductLocationMIS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductLocationMIS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductLocationPrice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductLocationPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_ProductLocationPurchaseOrderHeader.cs">
+      <DependentUpon>DS_ProductLocationPurchaseOrderHeader.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_ProductLocationPurchaseOrderHeader.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProductLocationPurchaseOrderHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_PSP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PSP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_PurchaseOrderInfo.cs">
+      <DependentUpon>DS_PurchaseOrderInfo.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_PurchaseOrderInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PurchaseOrderInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Purchasing.cs">
+      <DependentUpon>DS_Purchasing.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Purchasing.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Purchasing.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_RealIncomeExpence.cs">
+      <DependentUpon>DS_RealIncomeExpence.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_RealIncomeExpence.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_RealIncomeExpence.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Request.cs">
+      <DependentUpon>DS_Request.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Request.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Request.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderAct.cs">
+      <DependentUpon>DS_SalesOrderAct.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_SalesOrderAct.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderAct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderDetailDefacture.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderDetailDefacture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderDetailInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderDetailInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderDetailInfoVendor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderDetailInfoVendor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderDetailList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderDetailList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderDetailPivot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderDetailPivot.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderHeaderGroupByDate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderHeaderGroupByDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderHeaderPurchaseTotal.cs">
+      <DependentUpon>DS_SalesOrderHeaderPurchaseTotal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SalesOrderHeaderPurchaseTotal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SalesOrderHeaderPurchaseTotal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Simple.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Simple.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Synchronization.cs">
+      <DependentUpon>DS_Synchronization.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Synchronization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Synchronization.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_SyncSalesOrderDetail.cs">
+      <DependentUpon>DS_SyncSalesOrderDetail.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_SyncSalesOrderDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SyncSalesOrderDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_WarehouseDescription.cs">
+      <DependentUpon>DS_WarehouseDescription.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_WarehouseDescription.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_WarehouseDescription.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\OperationType.cs" />
+    <Compile Include="Enums\PurchaseStatuses.cs" />
+    <Compile Include="DS_Dictionary.cs">
+      <DependentUpon>DS_Dictionary.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Dictionary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Dictionary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Hedgehog.cs">
+      <DependentUpon>DS_Hedgehog.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Hedgehog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Hedgehog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Person.cs">
+      <DependentUpon>DS_Person.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Person.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Person.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Sales.cs">
+      <DependentUpon>DS_Sales.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_Sales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Sales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_User.cs">
+      <DependentUpon>DS_User.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS_User.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_User.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\Permissions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ObjectNames.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Apothex.Key\StrongKey.snk">
+      <Link>StrongKey.snk</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="DS_Accounting.xsc">
+      <DependentUpon>DS_Accounting.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Accounting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Accounting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Accounting.xss">
+      <DependentUpon>DS_Accounting.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Aversi.xsc">
+      <DependentUpon>DS_Aversi.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Aversi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Aversi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Aversi.xss">
+      <DependentUpon>DS_Aversi.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Barcode.xsc">
+      <DependentUpon>DS_Barcode.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Barcode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Barcode.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Barcode.xss">
+      <DependentUpon>DS_Barcode.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Branch.xsc">
+      <DependentUpon>DS_Branch.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Branch.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Branch.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Branch.xss">
+      <DependentUpon>DS_Branch.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Card.xsc">
+      <DependentUpon>DS_Card.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Card.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Card.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Card.xss">
+      <DependentUpon>DS_Card.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CardPointTransfer.xsc">
+      <DependentUpon>DS_CardPointTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CardPointTransfer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CardPointTransfer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_CardPointTransfer.xss">
+      <DependentUpon>DS_CardPointTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Cashbox.xsc">
+      <DependentUpon>DS_Cashbox.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Cashbox.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Cashbox.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Cashbox.xss">
+      <DependentUpon>DS_Cashbox.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CloseDay.xsc">
+      <DependentUpon>DS_CloseDay.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CloseDay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CloseDay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_CloseDay.xss">
+      <DependentUpon>DS_CloseDay.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Configuration.xsc">
+      <DependentUpon>DS_Configuration.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Configuration.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Configuration.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Configuration.xss">
+      <DependentUpon>DS_Configuration.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Currency.xsc">
+      <DependentUpon>DS_Currency.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Currency.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Currency.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Currency.xss">
+      <DependentUpon>DS_Currency.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CurrencyRate.xsc">
+      <DependentUpon>DS_CurrencyRate.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CurrencyRate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CurrencyRate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_CurrencyRate.xss">
+      <DependentUpon>DS_CurrencyRate.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Dictionary.xsc">
+      <DependentUpon>DS_Dictionary.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Dictionary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Dictionary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Dictionary.xss">
+      <DependentUpon>DS_Dictionary.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GPC.xsc">
+      <DependentUpon>DS_GPC.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GPC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GPC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_GPC.xss">
+      <DependentUpon>DS_GPC.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Hedgehog.xsc">
+      <DependentUpon>DS_Hedgehog.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Hedgehog.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Hedgehog.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Hedgehog.xss">
+      <DependentUpon>DS_Hedgehog.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Import.xsc">
+      <DependentUpon>DS_Import.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Import.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Import.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Import.xss">
+      <DependentUpon>DS_Import.xsd</DependentUpon>
+    </None>
+    <None Include="DS_KalinaGeorgia.xsc">
+      <DependentUpon>DS_KalinaGeorgia.xsd</DependentUpon>
+    </None>
+    <None Include="DS_KalinaGeorgia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_KalinaGeorgia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_KalinaGeorgia.xss">
+      <DependentUpon>DS_KalinaGeorgia.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Medicament.xsc">
+      <DependentUpon>DS_Medicament.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Medicament.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Medicament.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Medicament.xss">
+      <DependentUpon>DS_Medicament.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Neopharmi.xsc">
+      <DependentUpon>DS_Neopharmi.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Neopharmi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Neopharmi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Neopharmi.xss">
+      <DependentUpon>DS_Neopharmi.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Offline.xsc">
+      <DependentUpon>DS_Offline.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Offline.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Offline.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Offline.xss">
+      <DependentUpon>DS_Offline.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Operation.xsc">
+      <DependentUpon>DS_Operation.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Operation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Operation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Operation.xss">
+      <DependentUpon>DS_Operation.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Person.xsc">
+      <DependentUpon>DS_Person.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Person.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Person.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Person.xss">
+      <DependentUpon>DS_Person.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Product.xsc">
+      <DependentUpon>DS_Product.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Product.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Product.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Product.xss">
+      <DependentUpon>DS_Product.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistribution.xsc">
+      <DependentUpon>DS_ProductDistribution.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistribution.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductDistribution.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductDistribution.xss">
+      <DependentUpon>DS_ProductDistribution.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistributionDetailInfo.xsc">
+      <DependentUpon>DS_ProductDistributionDetailInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistributionDetailInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductDistributionDetailInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductDistributionDetailInfo.xss">
+      <DependentUpon>DS_ProductDistributionDetailInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistributionDetailList.xsc">
+      <DependentUpon>DS_ProductDistributionDetailList.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistributionDetailList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductDistributionDetailList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductDistributionDetailList.xss">
+      <DependentUpon>DS_ProductDistributionDetailList.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistributionHeader.xsc">
+      <DependentUpon>DS_ProductDistributionHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductDistributionHeader.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductDistributionHeader.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductDistributionHeader.xss">
+      <DependentUpon>DS_ProductDistributionHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductListPriceHistory.xsc">
+      <DependentUpon>DS_ProductListPriceHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductListPriceHistory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductListPriceHistory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductListPriceHistory.xss">
+      <DependentUpon>DS_ProductListPriceHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocation.xsc">
+      <DependentUpon>DS_ProductLocation.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductLocation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductLocation.xss">
+      <DependentUpon>DS_ProductLocation.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocationMIS.xsc">
+      <DependentUpon>DS_ProductLocationMIS.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocationMIS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductLocationMIS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductLocationMIS.xss">
+      <DependentUpon>DS_ProductLocationMIS.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocationPrice.xsc">
+      <DependentUpon>DS_ProductLocationPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocationPrice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductLocationPrice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductLocationPrice.xss">
+      <DependentUpon>DS_ProductLocationPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocationPurchaseOrderHeader.xsc">
+      <DependentUpon>DS_ProductLocationPurchaseOrderHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DS_ProductLocationPurchaseOrderHeader.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProductLocationPurchaseOrderHeader.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_ProductLocationPurchaseOrderHeader.xss">
+      <DependentUpon>DS_ProductLocationPurchaseOrderHeader.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PSP.xsc">
+      <DependentUpon>DS_PSP.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PSP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PSP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_PSP.xss">
+      <DependentUpon>DS_PSP.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PurchaseOrderInfo.xsc">
+      <DependentUpon>DS_PurchaseOrderInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PurchaseOrderInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PurchaseOrderInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_PurchaseOrderInfo.xss">
+      <DependentUpon>DS_PurchaseOrderInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Purchasing.xsc">
+      <DependentUpon>DS_Purchasing.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Purchasing.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Purchasing.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Purchasing.xss">
+      <DependentUpon>DS_Purchasing.xsd</DependentUpon>
+    </None>
+    <None Include="DS_RealIncomeExpence.xsc">
+      <DependentUpon>DS_RealIncomeExpence.xsd</DependentUpon>
+    </None>
+    <None Include="DS_RealIncomeExpence.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_RealIncomeExpence.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_RealIncomeExpence.xss">
+      <DependentUpon>DS_RealIncomeExpence.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Request.xsc">
+      <DependentUpon>DS_Request.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Request.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Request.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Request.xss">
+      <DependentUpon>DS_Request.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Sales.xsc">
+      <DependentUpon>DS_Sales.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Sales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Sales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Sales.xss">
+      <DependentUpon>DS_Sales.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderAct.xsc">
+      <DependentUpon>DS_SalesOrderAct.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderAct.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderAct.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderAct.xss">
+      <DependentUpon>DS_SalesOrderAct.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailDefacture.xsc">
+      <DependentUpon>DS_SalesOrderDetailDefacture.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailDefacture.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderDetailDefacture.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderDetailDefacture.xss">
+      <DependentUpon>DS_SalesOrderDetailDefacture.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailInfo.xsc">
+      <DependentUpon>DS_SalesOrderDetailInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderDetailInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderDetailInfo.xss">
+      <DependentUpon>DS_SalesOrderDetailInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailInfoVendor.xsc">
+      <DependentUpon>DS_SalesOrderDetailInfoVendor.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailInfoVendor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderDetailInfoVendor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderDetailInfoVendor.xss">
+      <DependentUpon>DS_SalesOrderDetailInfoVendor.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailList.xsc">
+      <DependentUpon>DS_SalesOrderDetailList.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderDetailList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderDetailList.xss">
+      <DependentUpon>DS_SalesOrderDetailList.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailPivot.xsc">
+      <DependentUpon>DS_SalesOrderDetailPivot.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderDetailPivot.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderDetailPivot.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderDetailPivot.xss">
+      <DependentUpon>DS_SalesOrderDetailPivot.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderHeaderGroupByDate.xsc">
+      <DependentUpon>DS_SalesOrderHeaderGroupByDate.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderHeaderGroupByDate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderHeaderGroupByDate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderHeaderGroupByDate.xss">
+      <DependentUpon>DS_SalesOrderHeaderGroupByDate.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderHeaderPurchaseTotal.xsc">
+      <DependentUpon>DS_SalesOrderHeaderPurchaseTotal.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SalesOrderHeaderPurchaseTotal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SalesOrderHeaderPurchaseTotal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SalesOrderHeaderPurchaseTotal.xss">
+      <DependentUpon>DS_SalesOrderHeaderPurchaseTotal.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Simple.xsc">
+      <DependentUpon>DS_Simple.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Simple.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Simple.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Simple.xss">
+      <DependentUpon>DS_Simple.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Synchronization.xsc">
+      <DependentUpon>DS_Synchronization.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Synchronization.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Synchronization.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Synchronization.xss">
+      <DependentUpon>DS_Synchronization.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SyncSalesOrderDetail.xsc">
+      <DependentUpon>DS_SyncSalesOrderDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DS_SyncSalesOrderDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SyncSalesOrderDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_SyncSalesOrderDetail.xss">
+      <DependentUpon>DS_SyncSalesOrderDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DS_User.xsc">
+      <DependentUpon>DS_User.xsd</DependentUpon>
+    </None>
+    <None Include="DS_User.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_User.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_User.xss">
+      <DependentUpon>DS_User.xsd</DependentUpon>
+    </None>
+    <None Include="DS_WarehouseDescription.xsc">
+      <DependentUpon>DS_WarehouseDescription.xsd</DependentUpon>
+    </None>
+    <None Include="DS_WarehouseDescription.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_WarehouseDescription.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_WarehouseDescription.xss">
+      <DependentUpon>DS_WarehouseDescription.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_KalinaGeorgia" targetNamespace="http://tempuri.org/DS_KalinaGeorgia.xsd" xmlns:mstns="http://tempuri.org/DS_KalinaGeorgia.xsd" xmlns="http://tempuri.org/DS_KalinaGeorgia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_KalinaGeorgia" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_KalinaGeorgia" msprop:Generator_UserDSName="DS_KalinaGeorgia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_Import" msprop:Generator_TableClassName="T_ImportDataTable" msprop:Generator_TableVarName="tableT_Import" msprop:Generator_TablePropName="T_Import" msprop:Generator_RowDeletingName="T_ImportRowDeleting" msprop:Generator_UserTableName="T_Import" msprop:Generator_RowChangingName="T_ImportRowChanging" msprop:Generator_RowEvHandlerName="T_ImportRowChangeEventHandler" msprop:Generator_RowDeletedName="T_ImportRowDeleted" msprop:Generator_RowEvArgName="T_ImportRowChangeEvent" msprop:Generator_RowChangedName="T_ImportRowChanged" msprop:Generator_RowClassName="T_ImportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ნომენკლატურა" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="ნომენკლატურა" msprop:Generator_ColumnVarNameInTable="columnნომენკლატურა" msprop:Generator_ColumnPropNameInTable="ნომენკლატურაColumn" msprop:Generator_UserColumnName="ნომენკლატურა" type="xs:string" minOccurs="0" />
+              <xs:element name="რაოდენობა" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="რაოდენობა" msprop:Generator_ColumnVarNameInTable="columnრაოდენობა" msprop:Generator_ColumnPropNameInTable="რაოდენობაColumn" msprop:Generator_UserColumnName="რაოდენობა" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ფასი" msprop:Generator_ColumnVarNameInTable="columnფასი" msprop:Generator_ColumnPropNameInRow="ფასი" msprop:Generator_ColumnPropNameInTable="ფასიColumn" msprop:Generator_UserColumnName="ფასი" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0025__x0020_ავტ_x0023__x0020_ფასდ_x0023_" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="___ავტ__ფასდ_" msprop:Generator_ColumnVarNameInTable="_column__ავტ__ფასდ_" msprop:Generator_ColumnPropNameInTable="___ავტ__ფასდ_Column" msprop:Generator_UserColumnName="% ავტ# ფასდ#" type="xs:decimal" minOccurs="0" />
+              <xs:element name="დღგ-ს_x0020__x0025_" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="_დღგ_ს__" msprop:Generator_ColumnVarNameInTable="_columnდღგ_ს__" msprop:Generator_ColumnPropNameInTable="_დღგ_ს__Column" msprop:Generator_UserColumnName="დღგ-ს %" type="xs:decimal" minOccurs="0" />
+              <xs:element name="დღგ-ს_x0020_თანხა" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="_დღგ_ს_თანხა" msprop:Generator_ColumnVarNameInTable="_columnდღგ_ს_თანხა" msprop:Generator_ColumnPropNameInTable="_დღგ_ს_თანხაColumn" msprop:Generator_UserColumnName="დღგ-ს თანხა" type="xs:decimal" minOccurs="0" />
+              <xs:element name="სულ" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="სულ" msprop:Generator_ColumnVarNameInTable="columnსულ" msprop:Generator_ColumnPropNameInTable="სულColumn" msprop:Generator_UserColumnName="სულ" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_SalesOrderDetailDefacture" targetNamespace="http://tempuri.org/DS_SalesOrderDetailDefacture.xsd" xmlns:mstns="http://tempuri.org/DS_SalesOrderDetailDefacture.xsd" xmlns="http://tempuri.org/DS_SalesOrderDetailDefacture.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ApothexConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApothexConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Apothex.DataType.Properties.Settings.GlobalReference.Default.ApothexConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_SalesOrderDetailDefacture" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_SalesOrderDetailDefacture" msprop:Generator_UserDSName="DS_SalesOrderDetailDefacture">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FN_SalesOrderDetailDefacture" msprop:Generator_TableClassName="FN_SalesOrderDetailDefactureDataTable" msprop:Generator_RowEvArgName="FN_SalesOrderDetailDefactureRowChangeEvent" msprop:Generator_TableVarName="tableFN_SalesOrderDetailDefacture" msprop:Generator_TablePropName="FN_SalesOrderDetailDefacture" msprop:Generator_RowDeletingName="FN_SalesOrderDetailDefactureRowDeleting" msprop:Generator_UserTableName="FN_SalesOrderDetailDefacture" msprop:Generator_RowChangingName="FN_SalesOrderDetailDefactureRowChanging" msprop:Generator_RowDeletedName="FN_SalesOrderDetailDefactureRowDeleted" msprop:Generator_RowChangedName="FN_SalesOrderDetailDefactureRowChanged" msprop:Generator_RowEvHandlerName="FN_SalesOrderDetailDefactureRowChangeEventHandler" msprop:Generator_RowClassName="FN_SalesOrderDetailDefactureRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BranchID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="BranchID" msprop:Generator_ColumnVarNameInTable="columnBranchID" msprop:Generator_ColumnPropNameInTable="BranchIDColumn" msprop:Generator_UserColumnName="BranchID" type="xs:int" minOccurs="0" />
+              <xs:element name="Branch" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Branch" msprop:Generator_ColumnVarNameInTable="columnBranch" msprop:Generator_ColumnPropNameInTable="BranchColumn" msprop:Generator_UserColumnName="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="NomenclatureID" msprop:Generator_ColumnVarNameInTable="columnNomenclatureID" msprop:Generator_ColumnPropNameInRow="NomenclatureID" msprop:Generator_ColumnPropNameInTable="NomenclatureIDColumn" msprop:Generator_UserColumnName="NomenclatureID" type="xs:int" minOccurs="0" />
+              <xs:element name="Nomenclature" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Nomenclature" msprop:Generator_ColumnVarNameInTable="columnNomenclature" msprop:Generator_ColumnPropNameInTable="NomenclatureColumn" msprop:Generator_UserColumnName="Nomenclature" type="xs:string" minOccurs="0" />
+              <xs:element name="CountryCode" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CountryCode" msprop:Generator_ColumnVarNameInTable="columnCountryCode" msprop:Generator_ColumnPropNameInTable="CountryCodeColumn" msprop:Generator_UserColumnName="CountryCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country" type="xs:string" minOccurs="0" />
+              <xs:element name="BrandID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="BrandID" msprop:Generator_ColumnVarNameInTable="columnBrandID" msprop:Generator_ColumnPropNameInTable="BrandIDColumn" msprop:Generator_UserColumnName="BrandID" type="xs:int" minOccurs="0" />
+              <xs:element name="Brand" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Brand" msprop:Generator_ColumnVarNameInTable="columnBrand" msprop:Generator_ColumnPropNameInTable="BrandColumn" msprop:Generator_UserColumnName="Brand" type="xs:string" minOccurs="0" />
+              <xs:element name="ValidDate" msprop:Generator_ColumnVarNameInTable="columnValidDate" msprop:Generator_ColumnPropNameInRow="ValidDate" msprop:Generator_ColumnPropNameInTable="ValidDateColumn" msprop:Generator_UserColumnName="ValidDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SaleQty" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SaleQty" msprop:Generator_ColumnVarNameInTable="columnSaleQty" msprop:Generator_ColumnPropNameInTable="SaleQtyColumn" msprop:Generator_UserColumnName="SaleQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Quantity" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CustomQty" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="CustomQty" msprop:Generator_ColumnVarNameInTable="columnCustomQty" msprop:Generator_ColumnPropNameInTable="CustomQtyColumn" msprop:Generator_UserColumnName="CustomQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SafetyStockLevel" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SafetyStockLevel" msprop:Generator_ColumnVarNameInTable="columnSafetyStockLevel" msprop:Generator_ColumnPropNameInTable="SafetyStockLevelColumn" msprop:Generator_UserColumnName="SafetyStockLevel" type="xs:short" minOccurs="0" />
+              <xs:element name="IsChoosed" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="IsChoosed" msprop:Generator_ColumnVarNameInTable="columnIsChoosed" msprop:Generator_ColumnPropNameInTable="IsChoosedColumn" msprop:Generator_UserColumnName="IsChoosed" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

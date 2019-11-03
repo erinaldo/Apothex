@@ -1,0 +1,7 @@
+﻿1. პროგრამა
+2. ფონტები
+3. კლავიატურის დრაივერი (KA).
+3. SQL Server Management Studio Express
+4. SQL Server 2005 Express Edition SP2
+5. WindowsInstaller-KB893803-v2-x86.exe
+6. msxml6.msi

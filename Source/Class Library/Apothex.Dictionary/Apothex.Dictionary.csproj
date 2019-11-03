@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{802C0FD1-B7D6-47B5-8BA0-8C5F4535289D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apothex.Dictionary</RootNamespace>
+    <AssemblyName>Apothex.Dictionary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\Apothex.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\bin\Debug\Apothex.Dictionary.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\bin\Release\Apothex.Dictionary.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zek, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8aeae8d348f39942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Zek\bin\Release\Zek.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBankBrowse.cs" />
+    <Compile Include="frmBankBrowse.Designer.cs">
+      <DependentUpon>frmBankBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankEdit.cs" />
+    <Compile Include="frmBankEdit.Designer.cs">
+      <DependentUpon>frmBankEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrandBrowse.cs" />
+    <Compile Include="frmBrandBrowse.Designer.cs">
+      <DependentUpon>frmBrandBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrandEdit.cs" />
+    <Compile Include="frmBrandEdit.Designer.cs">
+      <DependentUpon>frmBrandEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCountryBrowse.cs" />
+    <Compile Include="frmCountryBrowse.Designer.cs">
+      <DependentUpon>frmCountryBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCountryEdit.cs" />
+    <Compile Include="frmCountryEdit.Designer.cs">
+      <DependentUpon>frmCountryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrencyBrowse.cs" />
+    <Compile Include="frmCurrencyBrowse.Designer.cs">
+      <DependentUpon>frmCurrencyBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrencyEdit.cs" />
+    <Compile Include="frmCurrencyEdit.Designer.cs">
+      <DependentUpon>frmCurrencyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrencyRateBrowse.cs" />
+    <Compile Include="frmCurrencyRateBrowse.Designer.cs">
+      <DependentUpon>frmCurrencyRateBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrencyRateEdit.cs" />
+    <Compile Include="frmCurrencyRateEdit.Designer.cs">
+      <DependentUpon>frmCurrencyRateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenericBrowse.cs" />
+    <Compile Include="frmGenericBrowse.Designer.cs">
+      <DependentUpon>frmGenericBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenericEdit.cs" />
+    <Compile Include="frmGenericEdit.Designer.cs">
+      <DependentUpon>frmGenericEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentCategoryBrowse.cs" />
+    <Compile Include="frmMedicamentCategoryBrowse.Designer.cs">
+      <DependentUpon>frmMedicamentCategoryBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentCategoryEdit.cs" />
+    <Compile Include="frmMedicamentCategoryEdit.Designer.cs">
+      <DependentUpon>frmMedicamentCategoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedicamentLocation.Designer.cs">
+      <DependentUpon>frmMedicamentLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentSubcategoryBrowse.cs" />
+    <Compile Include="frmMedicamentSubcategoryBrowse.Designer.cs">
+      <DependentUpon>frmMedicamentSubcategoryBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentSubcategoryEdit.cs" />
+    <Compile Include="frmMedicamentSubcategoryEdit.Designer.cs">
+      <DependentUpon>frmMedicamentSubcategoryEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMergeMedicamentBrowse.cs" />
+    <Compile Include="frmMergeMedicamentBrowse.Designer.cs">
+      <DependentUpon>frmMergeMedicamentBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMergeMedicamentEdit.cs" />
+    <Compile Include="frmMergeMedicamentEdit.Designer.cs">
+      <DependentUpon>frmMergeMedicamentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentMethodBrowse.cs" />
+    <Compile Include="frmPaymentMethodBrowse.Designer.cs">
+      <DependentUpon>frmPaymentMethodBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentMethodEdit.cs" />
+    <Compile Include="frmPaymentMethodEdit.Designer.cs">
+      <DependentUpon>frmPaymentMethodEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentBrowse.cs" />
+    <Compile Include="frmMedicamentBrowse.designer.cs">
+      <DependentUpon>frmMedicamentBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicamentEdit.cs" />
+    <Compile Include="frmMedicamentEdit.designer.cs">
+      <DependentUpon>frmMedicamentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitMeasureBrowse.cs" />
+    <Compile Include="frmUnitMeasureBrowse.Designer.cs">
+      <DependentUpon>frmUnitMeasureBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitMeasureEdit.cs" />
+    <Compile Include="frmUnitMeasureEdit.Designer.cs">
+      <DependentUpon>frmUnitMeasureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apothex.Common\Apothex.Common.csproj">
+      <Project>{B757681B-19FB-4349-A30C-D5D3594A6C3C}</Project>
+      <Name>Apothex.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.Configuration\Apothex.Configuration.csproj">
+      <Project>{9F4874BF-6FF7-433A-9CF1-36A9BCDD9C58}</Project>
+      <Name>Apothex.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.DataManagment\Apothex.DataManagment.csproj">
+      <Project>{EA3D539A-DFF8-40F8-BA8E-B17D37359B7E}</Project>
+      <Name>Apothex.DataManagment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.DataType\Apothex.DataType.csproj">
+      <Project>{EC6E9DE4-BF60-4A46-8728-99ABD2060BA4}</Project>
+      <Name>Apothex.DataType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.Reporting\Apothex.Reporting.csproj">
+      <Project>{A58CA55D-0800-4B8E-891E-3E20B09CED74}</Project>
+      <Name>Apothex.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.Windows\Apothex.Windows.csproj">
+      <Project>{8816EF95-208D-4C0A-8048-B0FCA8735FB0}</Project>
+      <Name>Apothex.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.Xpo\Apothex.Xpo.csproj">
+      <Project>{947AB004-AB0C-4E82-A6CF-92B9589F85E2}</Project>
+      <Name>Apothex.Xpo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBankBrowse.resx">
+      <DependentUpon>frmBankBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankEdit.resx">
+      <DependentUpon>frmBankEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrandBrowse.resx">
+      <DependentUpon>frmBrandBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrandEdit.resx">
+      <DependentUpon>frmBrandEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCountryBrowse.resx">
+      <DependentUpon>frmCountryBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCountryEdit.resx">
+      <DependentUpon>frmCountryEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrencyBrowse.resx">
+      <DependentUpon>frmCurrencyBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrencyEdit.resx">
+      <DependentUpon>frmCurrencyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrencyRateBrowse.resx">
+      <DependentUpon>frmCurrencyRateBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrencyRateEdit.resx">
+      <DependentUpon>frmCurrencyRateEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenericBrowse.resx">
+      <DependentUpon>frmGenericBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenericEdit.resx">
+      <DependentUpon>frmGenericEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentCategoryBrowse.resx">
+      <DependentUpon>frmMedicamentCategoryBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentCategoryEdit.resx">
+      <DependentUpon>frmMedicamentCategoryEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentLocation.resx">
+      <DependentUpon>frmMedicamentLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentSubcategoryBrowse.resx">
+      <DependentUpon>frmMedicamentSubcategoryBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentSubcategoryEdit.resx">
+      <DependentUpon>frmMedicamentSubcategoryEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMergeMedicamentBrowse.resx">
+      <DependentUpon>frmMergeMedicamentBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMergeMedicamentEdit.resx">
+      <DependentUpon>frmMergeMedicamentEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentMethodBrowse.resx">
+      <DependentUpon>frmPaymentMethodBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentMethodEdit.resx">
+      <DependentUpon>frmPaymentMethodEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentBrowse.resx">
+      <DependentUpon>frmMedicamentBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicamentEdit.resx">
+      <DependentUpon>frmMedicamentEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnitMeasureBrowse.resx">
+      <DependentUpon>frmUnitMeasureBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnitMeasureEdit.resx">
+      <DependentUpon>frmUnitMeasureEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Apothex.Key\StrongKey.snk">
+      <Link>StrongKey.snk</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

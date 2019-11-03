@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <T_Detail Ref="2" type="DataTableSource" isKey="true">
+        <Alias>T_Detail</Alias>
+        <Columns isList="true" count="6">
+          <value>ProductID,System.Int32</value>
+          <value>ProductName,System.String</value>
+          <value>CountryName,System.String</value>
+          <value>Serie,System.String</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>Discount,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>T_Detail</Name>
+        <NameInSource>DS_ProductLocationPrice.T_Detail</NameInSource>
+      </T_Detail>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="17">
+      <value>,MyCompanyName,MyCompanyName,System.String,,False,False</value>
+      <value>,MyCompanyTaxCode,MyCompanyTaxCode,System.String,,False,False</value>
+      <value>,MyCompanyDirectorName,MyCompanyDirectorName,System.String,,False,False</value>
+      <value>,MyCompanyCountryCode,MyCompanyCountryCode,System.String,,False,False</value>
+      <value>,MyCompanyCountryName,MyCompanyCountryName,System.String,,False,False</value>
+      <value>,MyCompanyCity,MyCompanyCity,System.String,,False,False</value>
+      <value>,MyCompanyPostalCode,MyCompanyPostalCode,System.String,,False,False</value>
+      <value>,MyCompanyAddress,MyCompanyAddress,System.String,,False,False</value>
+      <value>,MyCompanyPhone,MyCompanyPhone,System.String,,False,False</value>
+      <value>,MyCompanyFax,MyCompanyFax,System.String,,False,False</value>
+      <value>,MyCompanyBankName,MyCompanyBankName,System.String,,False,False</value>
+      <value>,MyCompanyBankCode,MyCompanyBankCode,System.String,,False,False</value>
+      <value>,MyCompanyBankAccountNumber,MyCompanyBankAccountNumber,System.String,,False,False</value>
+      <value>,MyCompanyVATPayerFlag,MyCompanyVATPayerFlag,System.Boolean,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyCode,MyCompanyConditionalUnitCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyDefaultTradingCurrencyCode,MyCompanyDefaultTradingCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyRate,MyCompanyConditionalUnitCurrencyRate,System.Decimal,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Columns>2</Columns>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="4" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,20,2.2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text4 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.4,0,7.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,7,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{MyCompanyName}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Image1 Ref="6" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>b4725dd4d92a41f5a0f373916b5b430e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Name>Image1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Stretch>True</Stretch>
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <PrintOn>OnlyFirstPage</PrintOn>
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="7" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,28.1,20,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="7" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageFooterBand1>
+        <HeaderVW_ProductLocation Ref="9" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.4,10,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <HeaderVW_ProductLocation_MedicamentName Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Gainsboro</Brush>
+              <ClientRectangle>0,0,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,7,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_ProductLocation_MedicamentName</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>დასახელება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_ProductLocation_MedicamentName>
+            <HeaderVW_ProductLocation_CountryName Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Gainsboro</Brush>
+              <ClientRectangle>5.2,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,7,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_ProductLocation_CountryName</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>ქვეყანა</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_ProductLocation_CountryName>
+            <HeaderVW_ProductLocation_ListPrice Ref="12" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Gainsboro</Brush>
+              <ClientRectangle>9,0,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,7,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_ProductLocation_ListPrice</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>ფასი (ლარი)</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_ProductLocation_ListPrice>
+            <Text2 Ref="13" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Gainsboro</Brush>
+              <ClientRectangle>7.4,0,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,7,Bold</Font>
+              <Guid>b2ee6a7204874db4bc1e2bae90edc3a9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>ფასდაკლება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderVW_ProductLocation</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderVW_ProductLocation>
+        <DataVW_ProductLocation Ref="14" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4.8,10,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <DataVW_ProductLocation_MedicamentName Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,5.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,6</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_ProductLocation_MedicamentName</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{T_Detail.ProductName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_ProductLocation_MedicamentName>
+            <DataVW_ProductLocation_CountryName Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.2,0,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,6</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_ProductLocation_CountryName</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{T_Detail.CountryName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="17" type="PercentageFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <Symbol>%</Symbol>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_ProductLocation_CountryName>
+            <DataVW_ProductLocation_ListPrice Ref="18" type="Text" isKey="true">
+              <Border>Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9,0,1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,6</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_ProductLocation_ListPrice</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{T_Detail.UnitPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="19" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_ProductLocation_ListPrice>
+            <Text1 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>7.4,0,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,6</Font>
+              <Guid>5cfcbb441d534f4ba95c949ddd2c6da5</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="14" />
+              <Text>{T_Detail.Discount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="21" type="PercentageFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+                <Symbol>%</Symbol>
+              </TextFormat>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>T_Detail</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataVW_ProductLocation</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>ProductName</value>
+          </Sort>
+        </DataVW_ProductLocation>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>0edad2017ef5402da56612e0faa7a32a</Guid>
+      <Margins>0.5,0.5,0.5,0.5</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <RenderingEvent>string file = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "logo.jpg");
+if (System.IO.File.Exists(file))
+{
+	Image1.File = file;
+	return;
+}
+file = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "logo.png");
+if (System.IO.File.Exists(file))
+{
+	Image1.File = file;
+	return;
+}</RenderingEvent>
+      <Report isRef="0" />
+      <Watermark Ref="22" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="23" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Rpt Produc Location Price</ReportAlias>
+  <ReportAuthor>Programmer.GE</ReportAuthor>
+  <ReportChanged>6/12/2011 9:55:48 PM</ReportChanged>
+  <ReportCreated>6/28/2009 10:03:23 PM</ReportCreated>
+  <ReportDescription>პრაისი</ReportDescription>
+  <ReportFile>D:\User\Documents\Projects\Apothex\Source\Class Library\Apothex.Reporting\Production\RptProducLocationPrice.mrt</ReportFile>
+  <ReportGuid>e242476ffaeb44b39344532841ed84f0</ReportGuid>
+  <ReportName>RptProducLocationPrice</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2010.3.900</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class RptProducLocationPrice : Stimulsoft.Report.StiReport
+    {
+        
+        public RptProducLocationPrice()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

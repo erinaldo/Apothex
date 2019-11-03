@@ -1,0 +1,49 @@
+﻿DS_Dictionary.VW_Medicament
+	დამატებულია: InUse
+
+
+DS_Purchasing.SP_GetPurchaseOrderDetail
+	მოხსნილია ReadOnly: LineTotal
+	დამატებულია: _TaxAmt, _LineTotal, _ListPrice, _DealerPrice, _CalcVendorUnitPricePct, Action
+
+
+
+DS_ProductLocation.VW_ProductLocation
+	დამატებულია: InSale
+	
+DS_ProductLocation.VW_ProductLocation
+	მივანიჭე true: ModifiedUserID AllowDBNull
+	
+DS_ProductLocation.SP_GetVWProductLocation
+	მივანიჭე true: ModifiedUserID AllowDBNull
+	
+
+
+DS_ProductDistribution.SP_GetProductDistributionHeader
+	მოხსნილია ReadOnly: TotalDue
+
+DS_ProductDistribution.SP_GetProductDistributionDetail
+	დამატებულია: _ResidualQty, _DistributeUnitQty, _UnitPrice, _LineTotal, Action
+
+DS_Production.VW_Product
+	დამატებულია: NewListPrice, _NewListPrice, NewDealerPrice, _NewDealerPrice, NewDiscountPct, Action
+
+
+
+
+DS_Production.SP_UniversalProductCode
+	დამატებულია: Action
+	
+	
+
+DS_Sales.SP_GetSalesOrderDetail
+	დამატებულია:	_UnitPrice,--ფასი ლარში (პირობითი ფასი გამრავლებული კურსზე)
+					_ResidualQty,
+					_SaleUnitQty,
+					Action
+	მოხსნილია ReadOnly: SaleLineTotal, SaleLineTotalDiscount
+
+DS_Sales.SP_GetSalesHedgehog
+	დამატებულია: Action
+	მოხსნილია key
+	NullValue = Empty: CardNumber

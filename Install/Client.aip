@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="7.6" version="7.7" Modules="enterprise" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="http://www.programmer.ge"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://www.programmer.ge"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="http://www.programmer.ge"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="ProgrammerGE" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{B0E8A689-7D56-42B1-B126-0278A88CA46D} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Apothex" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="3.3.1"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{6A10DF1C-ABA9-46EB-B8AF-71CE31C21444}"/>
+    <ROW Property="WindowsFamily9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 2000 Service Pack 3" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Bin_DIR" Directory_Parent="APPDIR" DefaultDir="Bin"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Docs_DIR" Directory_Parent="APPDIR" DefaultDir="Docs"/>
+    <ROW Directory="FontsFolder" Directory_Parent="TARGETDIR" DefaultDir="FontsF~1|FontsFolder" IsPseudoRoot="1"/>
+    <ROW Directory="New_Folder_1_DIR" Directory_Parent="SHORTCUTDIR" DefaultDir="Samples"/>
+    <ROW Directory="New_Folder_DIR" Directory_Parent="SHORTCUTDIR" DefaultDir="Docume~1|Documentation"/>
+    <ROW Directory="Reports_DIR" Directory_Parent="APPDIR" DefaultDir="Reports"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="Samples_DIR" Directory_Parent="APPDIR" DefaultDir="Samples"/>
+    <ROW Directory="SystemFolder" Directory_Parent="TARGETDIR" DefaultDir="System~1|SystemFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{333E88FB-D315-4A9F-81A7-37488A9E5171}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{269906D3-6C00-472F-B6A9-9020E3813ED3}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Apothex.exe" ComponentId="{D16F2F87-92D6-4072-AE09-C5B08C9B9370}" Directory_="Bin_DIR" Attributes="0" KeyPath="Apothex.exe"/>
+    <ROW Component="AppStart.exe" ComponentId="{82FB5746-A18A-4E5B-9CE8-731609D87223}" Directory_="APPDIR" Attributes="0" KeyPath="AppStart.exe"/>
+    <ROW Component="BPG_Glaho_Arial.ttf" Directory_="FontsFolder" Attributes="144"/>
+    <ROW Component="Documentation_Folder" ComponentId="{B51CB766-2858-4321-AB68-BB4D256BF278}" Directory_="New_Folder_DIR" Attributes="0"/>
+    <ROW Component="HomePage.url" ComponentId="{A2D3B8DA-AC19-4312-9E09-DBC813335F13}" Directory_="Docs_DIR" Attributes="0" KeyPath="HomePage.url"/>
+    <ROW Component="ImportPurchaseOrder.xlt" ComponentId="{662248F8-6A74-4522-AEFB-2ACD0E84BFB5}" Directory_="Samples_DIR" Attributes="0" KeyPath="ImportPurchaseOrder.xlt"/>
+    <ROW Component="NET_Framework_2.0" ComponentId="{0645D51B-26C8-4AD3-B2B8-6552C835A84E}" Directory_="APPDIR" Attributes="4" KeyPath="NET_Framework_2.0" Options="2"/>
+    <ROW Component="RptSalesOrderDetailThermalPrinter.mrt" ComponentId="{B0FE8DD5-2304-49FD-9F83-C8FB74AEF80E}" Directory_="Reports_DIR" Attributes="0" KeyPath="RptSalesOrderDetailThermalPrinter.mrt"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{492B3E43-B762-4185-B02E-8052C98E318C}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="Samples_Folder" ComponentId="{4A9CE6AD-FCE2-44E6-81DA-405F81B594D3}" Directory_="New_Folder_1_DIR" Attributes="0"/>
+    <ROW Component="UserManual.chm" ComponentId="{19B2751A-293D-4E38-BE83-4A8CD73C9514}" Directory_="Docs_DIR" Attributes="0" KeyPath="UserManual.chm" Type="1"/>
+    <ROW Component="kbdgeol.dll" Directory_="SystemFolder" Attributes="144" KeyPath="kbdgeol.dll"/>
+    <ROW Component="kbdgeor.dll" Directory_="SystemFolder" Attributes="144" KeyPath="kbdgeor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="Application" Title="Apothex" Description="Application files" Display="3" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath Apothex.exe UserManual.chm SHORTCUTDIR APPDIR HomePage.url AppStart.exe"/>
+    <ROW Feature="Documentation" Title="Documentation" Description="Help files" Display="7" Level="1" Directory_="APPDIR" Attributes="0" Components="Documentation_Folder"/>
+    <ROW Feature="Fonts" Title="Fonts" Description="Fonts used by software" Display="11" Level="1" Directory_="APPDIR" Attributes="0" Components="BPG_Glaho_Arial.ttf"/>
+    <ROW Feature="Georgian_Keyboard" Title="Georgian Keyboard" Description="Georgian keyboard (KA)" Display="13" Level="4" Directory_="APPDIR" Attributes="0" Components="kbdgeol.dll kbdgeor.dll"/>
+    <ROW Feature="NET_Framework_2.0" Title=".NET Framework 2.0" Description=".NET Framework 2.0" Display="5" Level="1" Attributes="0" Components="NET_Framework_2.0"/>
+    <ROW Feature="Reports" Title="Reports" Description="Report Templates (You can customize reports)" Display="15" Level="1" Directory_="APPDIR" Attributes="0" Components="RptSalesOrderDetailThermalPrinter.mrt"/>
+    <ROW Feature="Samples" Title="Samples" Description="Import templates" Display="9" Level="1" Directory_="APPDIR" Attributes="0" Components="ImportPurchaseOrder.xlt Samples_Folder"/>
+    <ATTRIBUTE name="CurrentFeature" value="Application"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Apothex.exe" Component_="Apothex.exe" FileName="Apothex.exe" Attributes="0" SourcePath="Client\Bin\Apothex.exe" SelfReg="false" Sequence="1"/>
+    <ROW File="Apothex.exe.config" Component_="Apothex.exe" FileName="Apothe~1.con|Apothex.exe.config" Attributes="0" SourcePath="Client\Bin\Apothex.exe.config" SelfReg="false" Sequence="2"/>
+    <ROW File="AppStart.config" Component_="AppStart.exe" FileName="AppSta~1.con|AppStart.config" Attributes="0" SourcePath="Client\AppStart.config" SelfReg="false" Sequence="9"/>
+    <ROW File="AppStart.exe" Component_="AppStart.exe" FileName="AppStart.exe" Attributes="0" SourcePath="Client\AppStart.exe" SelfReg="false" Sequence="10"/>
+    <ROW File="BPG_Glaho_Arial.ttf" Component_="BPG_Glaho_Arial.ttf" FileName="BPGGla~1.ttf|BPG Glaho Arial.ttf" Attributes="0" SourcePath="Prerequisites\Fonts\BPG Glaho Arial.ttf" SelfReg="false" Sequence="6"/>
+    <ROW File="HomePage.url" Component_="HomePage.url" FileName="HomePage.url" Attributes="0" SourcePath="Client\Docs\HomePage.url" SelfReg="false" Sequence="3"/>
+    <ROW File="ImportPurchaseOrder.xlt" Component_="ImportPurchaseOrder.xlt" FileName="Import~1.xlt|ImportPurchaseOrder.xlt" Attributes="0" SourcePath="Client\Samples\ImportPurchaseOrder.xlt" SelfReg="false" Sequence="5"/>
+    <ROW File="RptSalesOrderDetailThermalPrinter.mrt" Component_="RptSalesOrderDetailThermalPrinter.mrt" FileName="RptSal~1.mrt|RptSalesOrderDetailThermalPrinter.mrt" Attributes="0" SourcePath="Client\Reports\RptSalesOrderDetailThermalPrinter.mrt" SelfReg="false" Sequence="11"/>
+    <ROW File="UserManual.chm" Component_="UserManual.chm" FileName="UserMa~1.chm|UserManual.chm" Attributes="0" SourcePath="Client\Docs\UserManual.chm" SelfReg="false" Sequence="4"/>
+    <ROW File="kbdgeol.dll" Component_="kbdgeol.dll" FileName="kbdgeol.dll" Attributes="0" SourcePath="Prerequisites\2000KBD\kbdgeol.dll" SelfReg="false" Sequence="7"/>
+    <ROW File="kbdgeor.dll" Component_="kbdgeor.dll" FileName="kbdgeor.dll" Attributes="0" SourcePath="Prerequisites\2000KBD\kbdgeor.dll" SelfReg="false" Sequence="8"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" PackageFileName="setup" Languages="en" InstallationType="2" CabsLocation="1" CompressCabs="false" UseLzma="true" LzmaCompressionLevel="4" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\install" ExtUI="true" UACExecutionLevel="2"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;azure\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="SetupTypeDlg.aip" Path="&lt;AI_THEMES&gt;azure\fragments\SetupTypeDlg.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;azure\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" Template="Downloading [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" Template="Extracting [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Installing prerequisite software" Template="Installing [1]{[2] completed}" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" Template="[1] was not installed correctly." DescriptionLocId="ActionText.Description.AI_VerifyPrereq" TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="SetupTypeDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="SetupTypeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+    <ROW Directory_="New_Folder_DIR" Component_="Documentation_Folder"/>
+    <ROW Directory_="New_Folder_1_DIR" Component_="Samples_Folder"/>
+    <ROW Directory_="APPDIR" Component_="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RunFinishActions" Type="1" Source="aicustact.dll" Target="RunFinishActions" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFontsComponent">
+    <ROW File_="BPG_Glaho_Arial.ttf"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1201"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1283"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1282"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1281"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="Version9X OR VersionNT64 OR ((VersionNT &gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &gt;= 3)))" Description="[ProductName] cannot be installed on systems earlier than [WindowsTypeNT]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsFamily9X]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLockPermComponent">
+    <ROW LockObject="APPDIR" Table="CreateFolder" User="Everyone" Permission="1880096767"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Layout_File" Root="2" Key="SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00010437" Name="Layout File" Value="kbdgeor.dll" Component_="kbdgeor.dll"/>
+    <ROW Registry="Layout_File_1" Root="2" Key="SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00020437" Name="Layout File" Value="kbdgeol.dll" Component_="kbdgeol.dll"/>
+    <ROW Registry="Layout_Id" Root="2" Key="SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00010437" Name="Layout Id" Value="0041" Component_="kbdgeor.dll"/>
+    <ROW Registry="Layout_Id_1" Root="2" Key="SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00020437" Name="Layout Id" Value="0042" Component_="kbdgeol.dll"/>
+    <ROW Registry="Layout_Text" Root="2" Key="SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00010437" Name="Layout Text" Value="Georgian (Rus)" Component_="kbdgeor.dll"/>
+    <ROW Registry="Layout_Text_1" Root="2" Key="SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00020437" Name="Layout Text" Value="Georgian (Lat)" Component_="kbdgeol.dll"/>
+    <ROW Registry="NET_Framework_2.0" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="NET_Framework_2.0" Value="1" Component_="NET_Framework_2.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Apothex" Directory_="SHORTCUTDIR" Name="Apothex" Component_="Apothex.exe" Target="[#Apothex.exe]" Description="Apothex" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Bin_DIR"/>
+    <ROW Shortcut="ApothexAppStart" Directory_="DesktopFolder" Name="Apothe~1|ApothexAppStart" Component_="AppStart.exe" Target="[#AppStart.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Apothex_1" Directory_="DesktopFolder" Name="Apothex" Component_="Apothex.exe" Target="[#Apothex.exe]" Description="Apothex" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Bin_DIR"/>
+    <ROW Shortcut="AppStart" Directory_="SHORTCUTDIR" Name="AppStart" Component_="AppStart.exe" Target="[#AppStart.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Home_Page" Directory_="SHORTCUTDIR" Name="HomePa~1|Home Page" Component_="HomePage.url" Target="[#HomePage.url]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Docs_DIR"/>
+    <ROW Shortcut="Import_Purchase_Order" Directory_="New_Folder_1_DIR" Name="Import~1|Import Purchase Order" Component_="ImportPurchaseOrder.xlt" Target="[#ImportPurchaseOrder.xlt]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Samples_DIR"/>
+    <ROW Shortcut="Uninstall" Directory_="SHORTCUTDIR" Name="Uninst~1|Uninstall" Component_="Apothex.exe" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="User_Manual" Directory_="New_Folder_DIR" Name="UserMa~1|User Manual" Component_="UserManual.chm" Target="[#UserManual.chm]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Docs_DIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="azure"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="NET_Framework_2.0" DisplayName=".NET Framework 2.0" SetupFileUrl="H:\Install\Software\Programing\Visual Studio\Visual Studio 2008\dotnetfx.exe" Location="0" ExactSize="0" MinWin9xVer="7" MinWinNTVer="20" Operator="1" TargetName="dotnetfx.exe" Type="1" Feature="NET_Framework_2.0"/>
+    <ATTRIBUTE name="PrereqsOrder" value="NET_Framework_2.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="CurrentBuildNumber" Prereq="NET_Framework_2.0" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber" RefContent="G3790" Order="2" Property="PreReqSearch_1"/>
+    <ROW SearchKey="Install" Prereq="NET_Framework_2.0" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727\Install" RefContent="M1" Order="1" Property="PreReqSearch"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="Client" Feature="Application" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+  </COMPONENT>
+</DOCUMENT>

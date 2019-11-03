@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <SP_GetPurchaseOrderDetail Ref="2" type="DataTableSource" isKey="true">
+        <Alias>SP_GetPurchaseOrderDetail</Alias>
+        <Columns isList="true" count="32">
+          <value>PurchaseOrderDetailID,System.Guid</value>
+          <value>PurchaseOrderID,System.Int32</value>
+          <value>ReceivedQty,System.Decimal</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>LineTotal,System.Decimal</value>
+          <value>VendorUnitPrice,System.Decimal</value>
+          <value>OrdinalNumber,System.Int16</value>
+          <value>ProductID,System.Int32</value>
+          <value>MedicamentID,System.Int32</value>
+          <value>ProductNumber,System.String</value>
+          <value>MedicamentName,System.String</value>
+          <value>StandardCost,System.Decimal</value>
+          <value>ListPrice,System.Decimal</value>
+          <value>DealerPrice,System.Decimal</value>
+          <value>ProductCurrencyCode,System.String</value>
+          <value>ProductCurrencyRate,System.Decimal</value>
+          <value>DiscountPct,System.Decimal</value>
+          <value>TaxRate,System.Decimal</value>
+          <value>ValidDate,System.Nullable`1[System.DateTime]</value>
+          <value>CountryCode,System.String</value>
+          <value>CountryName,System.String</value>
+          <value>BrandID,System.Int32</value>
+          <value>BrandName,System.String</value>
+          <value>Serie,System.String</value>
+          <value>UnitsInStock,System.Int16</value>
+          <value>_TaxAmt,System.Decimal</value>
+          <value>_LineTotal,System.Decimal</value>
+          <value>_ListPrice,System.Decimal</value>
+          <value>_DealerPrice,System.Decimal</value>
+          <value>_VendorUnitPrice,System.Decimal</value>
+          <value>_CalcVendorUnitPricePct,System.Decimal</value>
+          <value>Action,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>SP_GetPurchaseOrderDetail</Name>
+        <NameInSource>DS_Purchasing.SP_GetPurchaseOrderDetail</NameInSource>
+      </SP_GetPurchaseOrderDetail>
+      <SP_GetPurchaseOrderHeader Ref="3" type="DataTableSource" isKey="true">
+        <Alias>SP_GetPurchaseOrderHeader</Alias>
+        <Columns isList="true" count="25">
+          <value>PurchaseOrderID,System.Int32</value>
+          <value>BranchID,System.Int32</value>
+          <value>BranchName,System.String</value>
+          <value>OrderDate,System.DateTime</value>
+          <value>OverheadNumber,System.String</value>
+          <value>VendorID,System.Int32</value>
+          <value>VendorName,System.String</value>
+          <value>SubTotal,System.Decimal</value>
+          <value>TaxAmt,System.Decimal</value>
+          <value>Freight,System.Decimal</value>
+          <value>TotalDue,System.Decimal</value>
+          <value>CurrencyCode,System.String</value>
+          <value>CurrencyRate1,System.Decimal</value>
+          <value>CurrencyRate2,System.Decimal</value>
+          <value>PaymentMethodID,System.Int32</value>
+          <value>PaymentMethodName,System.String</value>
+          <value>RevisionNumber,System.Byte</value>
+          <value>Status,System.Byte</value>
+          <value>ModifiedUserID,System.Int32</value>
+          <value>Modifier,System.String</value>
+          <value>ModifiedDate,System.DateTime</value>
+          <value>ApproverUserID,System.Int32</value>
+          <value>Approver,System.String</value>
+          <value>rowguid,System.Guid</value>
+          <value>Action,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>SP_GetPurchaseOrderHeader</Name>
+        <NameInSource>DS_Purchasing.SP_GetPurchaseOrderHeader</NameInSource>
+      </SP_GetPurchaseOrderHeader>
+    </DataSources>
+    <Relations isList="true" count="1">
+      <SP_GetPurchaseOrderHeader Ref="4" type="DataRelation" isKey="true">
+        <Alias>SP_GetPurchaseOrderHeader</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>PurchaseOrderID</value>
+        </ChildColumns>
+        <ChildSource isRef="2" />
+        <Dictionary isRef="1" />
+        <Name>SP_GetPurchaseOrderHeader</Name>
+        <NameInSource>SP_GetPurchaseOrderHeader_SP_GetPurchaseOrderDetail</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>PurchaseOrderID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </SP_GetPurchaseOrderHeader>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="17">
+      <value>,MyCompanyName,MyCompanyName,System.String,,False,False</value>
+      <value>,MyCompanyTaxCode,MyCompanyTaxCode,System.String,,False,False</value>
+      <value>,MyCompanyDirectorName,MyCompanyDirectorName,System.String,,False,False</value>
+      <value>,MyCompanyCountryCode,MyCompanyCountryCode,System.String,,False,False</value>
+      <value>,MyCompanyCountryName,MyCompanyCountryName,System.String,,False,False</value>
+      <value>,MyCompanyCity,MyCompanyCity,System.String,,False,False</value>
+      <value>,MyCompanyPostalCode,MyCompanyPostalCode,System.String,,False,False</value>
+      <value>,MyCompanyAddress,MyCompanyAddress,System.String,,False,False</value>
+      <value>,MyCompanyPhone,MyCompanyPhone,System.String,,False,False</value>
+      <value>,MyCompanyFax,MyCompanyFax,System.String,,False,False</value>
+      <value>,MyCompanyBankName,MyCompanyBankName,System.String,,False,False</value>
+      <value>,MyCompanyBankCode,MyCompanyBankCode,System.String,,False,False</value>
+      <value>,MyCompanyBankAccountNumber,MyCompanyBankAccountNumber,System.String,,False,False</value>
+      <value>,MyCompanyVATPayerFlag,MyCompanyVATPayerFlag,System.Boolean,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyCode,MyCompanyConditionalUnitCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyDefaultTradingCurrencyCode,MyCompanyDefaultTradingCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyRate,MyCompanyConditionalUnitCurrencyRate,System.Decimal,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <DataSP_GetPurchaseOrderHeader Ref="6" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,27.7,2</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,27.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>შემავალი ფაქტურა №{SP_GetPurchaseOrderHeader.PurchaseOrderID}    თარიღი: {Format("{0:yyyy.MM.dd}", SP_GetPurchaseOrderHeader.OrderDate)}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,27.6,1.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{MyCompanyName}
+მის: {MyCompanyAddress}{IIF(MyCompanyPhone.Length &gt; 0, " ტელ:" + MyCompanyPhone, string.Empty)}
+ფილიალი: {SP_GetPurchaseOrderHeader.BranchName}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>SP_GetPurchaseOrderHeader</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataSP_GetPurchaseOrderHeader</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>PurchaseOrderID</value>
+          </Sort>
+        </DataSP_GetPurchaseOrderHeader>
+        <HeaderSP_GetPurchaseOrderDetail Ref="9" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.2,27.7,1</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text3 Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>№</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0,7.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>be1f1b1ed32d4af2a8d354d2e045373b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>მედიკამენტი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="12" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.2,0,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>4b8a671054664c058ff9aad0d3e75c1c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>რაოდ.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="13" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>9f87c506cb0143218adb278007ac93bc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>ფასი / შ.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="14" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.6,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>c250c822512d455ea510fd9b4209cc5e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>ჯამი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="15" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0,3,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>83e44455beec4a628a45df1c78514cb1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>სერია</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="16" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.4,0,1.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>0635eae15de3441495063d92a1db0b4b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>ვადა</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text22 Ref="17" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.6,0,5,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>833ebda4ef93479eb3f375a76dc8808b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>მწარმოებელი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text33 Ref="18" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.6,0,2.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>ea9cd036bd29489faef02ca6c39036c8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>მწ. ქვეყანა</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text24 Ref="19" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23.8,0,1.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9,Bold</Font>
+              <Guid>b6042d4fb88246b78ddc680d7cd26f34</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="5" />
+              <Parent isRef="9" />
+              <Text>ფასი / გ.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderSP_GetPurchaseOrderDetail</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </HeaderSP_GetPurchaseOrderDetail>
+        <DataSP_GetPurchaseOrderDetail Ref="20" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,5,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text10 Ref="21" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="22" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1,0,7.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.MedicamentName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=EllipsisCharacter, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="23" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.2,0,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.ReceivedQty}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="25" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.UnitPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="26" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="27" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.6,0,2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.LineTotal}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="28" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.4,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.Serie}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.4,0,1.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.ValidDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="31" type="CustomFormat" isKey="true">
+                <StringFormat>MM\/yy</StringFormat>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text23 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>12.6,0,5,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>d938f50e38974de79eb8fcd387869aa1</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.BrandName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text32 Ref="33" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>17.6,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <Guid>11b70ea107f54eaba427a6d7a164bba8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail.CountryName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text25 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>23.8,0,1.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>1f58102890a04388879cdfd17ad9a616</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="5" />
+              <Parent isRef="20" />
+              <Text>{SP_GetPurchaseOrderDetail._ListPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="35" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName>SP_GetPurchaseOrderHeader_SP_GetPurchaseOrderDetail</DataRelationName>
+          <DataSourceName>SP_GetPurchaseOrderDetail</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="6" />
+          <Name>DataSP_GetPurchaseOrderDetail</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>OrdinalNumber</value>
+          </Sort>
+        </DataSP_GetPurchaseOrderDetail>
+        <FooterSP_GetPurchaseOrderDetail Ref="36" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.6,27.7,4.4</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text17 Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20.2,0,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <Text>{Sum(SP_GetPurchaseOrderDetail.ReceivedQty)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="38" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.6,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <Text>{Sum(SP_GetPurchaseOrderDetail.LineTotal)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="40" type="NumberFormat" isKey="true">
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,19,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <Text>პროდუქცია: {Format("{0:N2}", SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.SubTotal)} {SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.CurrencyCode}
+ტრანსპორტირება: {Format("{0:N2}", SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.Freight)} {SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.CurrencyCode}
+საგადასახადო: {Format("{0:N2}", SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.TaxAmt)} {SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.CurrencyCode}
+თანხა სულ: {Format("{0:N2}", SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.TotalDue)} {SP_GetPurchaseOrderDetail.SP_GetPurchaseOrderHeader.CurrencyCode}
+
+სერტიფიცირებულია და ნებადართულია სარეალიზაციოდ</Text>
+              <TextBrush>Black</TextBrush>
+            </Text19>
+            <Text20 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.2,3.8,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <Text>გასცა:</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="43" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,3.8,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,9</Font>
+              <Guid>17c9c51df77b4f0d87fb853966c9b1f8</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <Text>მიიღო:</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <HorizontalLine1 Ref="44" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>7.8,4.2,4.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="45" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLine1</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <StartCap Ref="46" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </HorizontalLine1>
+            <HorizontalLine2 Ref="47" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>14.4,4.2,4.6,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="48" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>eb5065805ee7455cb2f5f2716141505c</Guid>
+              <Name>HorizontalLine2</Name>
+              <Page isRef="5" />
+              <Parent isRef="36" />
+              <StartCap Ref="49" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </HorizontalLine2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterSP_GetPurchaseOrderDetail</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </FooterSP_GetPurchaseOrderDetail>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>fe95fec27f0d4ff49322fb6edbd2e1be</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="50" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="51" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Rpt Purchase Order Detail</ReportAlias>
+  <ReportAuthor>Programmer.GE</ReportAuthor>
+  <ReportChanged>7/17/2010 10:27:41 PM</ReportChanged>
+  <ReportCreated>2/7/2009 3:51:39 PM</ReportCreated>
+  <ReportDescription>შესყიდვის დეტალური რეპორტი</ReportDescription>
+  <ReportFile>D:\User\Documents\Projects\Apothex\Source\Class Library\Apothex.Reporting\Purchasing\RptPurchaseOrderDetail.mrt</ReportFile>
+  <ReportGuid>a45fc7e110e84d7885df646559550b3b</ReportGuid>
+  <ReportName>RptPurchaseOrderDetail</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2010.1.700</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class RptPurchaseOrderDetail : Stimulsoft.Report.StiReport
+    {
+        
+        public RptPurchaseOrderDetail()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

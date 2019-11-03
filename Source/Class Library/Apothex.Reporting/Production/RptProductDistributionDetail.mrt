@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <SP_GetProductDistributionDetail Ref="2" type="DataTableSource" isKey="true">
+        <Alias>SP_GetProductDistributionDetail</Alias>
+        <Columns isList="true" count="29">
+          <value>ProductDistributionDetailID,System.Guid</value>
+          <value>ProductDistributionID,System.Int32</value>
+          <value>ProductLocationID,System.Int32</value>
+          <value>DistributeQty,System.Decimal</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>LineTotal,System.Decimal</value>
+          <value>OrdinalNumber,System.Int16</value>
+          <value>ProductID,System.Int32</value>
+          <value>BranchID,System.Int32</value>
+          <value>PurchaseOrderDetailID,System.Guid</value>
+          <value>MedicamentID,System.Int32</value>
+          <value>ProductNumber,System.String</value>
+          <value>MedicamentName,System.String</value>
+          <value>Quantity,System.Decimal</value>
+          <value>StandardCost,System.Decimal</value>
+          <value>ListPrice,System.Decimal</value>
+          <value>DealerPrice,System.Decimal</value>
+          <value>DiscountPct,System.Decimal</value>
+          <value>TaxRate,System.Decimal</value>
+          <value>ValidDate,System.DateTime</value>
+          <value>CountryCode,System.String</value>
+          <value>CountryName,System.String</value>
+          <value>BrandID,System.Int32</value>
+          <value>BrandName,System.String</value>
+          <value>Serie,System.String</value>
+          <value>UnitsInStock,System.Int16</value>
+          <value>_ResidualQty,System.Decimal</value>
+          <value>_DistributeUnitQty,System.Int32</value>
+          <value>Action,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>SP_GetProductDistributionDetail</Name>
+        <NameInSource>DS_ProductDistribution.SP_GetProductDistributionDetail</NameInSource>
+      </SP_GetProductDistributionDetail>
+      <SP_GetProductDistributionHeader Ref="3" type="DataTableSource" isKey="true">
+        <Alias>SP_GetProductDistributionHeader</Alias>
+        <Columns isList="true" count="20">
+          <value>ProductDistributionID,System.Int32</value>
+          <value>FromBranchID,System.Int32</value>
+          <value>FromBranchName,System.String</value>
+          <value>ToBranchID,System.Int32</value>
+          <value>ToBranchName,System.String</value>
+          <value>StartDate,System.DateTime</value>
+          <value>EndDate,System.DateTime</value>
+          <value>SubTotal,System.Decimal</value>
+          <value>TaxAmt,System.Decimal</value>
+          <value>Freight,System.Decimal</value>
+          <value>TotalDue,System.Decimal</value>
+          <value>CurrencyCode,System.String</value>
+          <value>CurrencyRateID,System.Int32</value>
+          <value>RevisionNumber,System.Byte</value>
+          <value>Status,System.Byte</value>
+          <value>ModifiedUserID,System.Int32</value>
+          <value>Modifier,System.String</value>
+          <value>ModifiedDate,System.DateTime</value>
+          <value>ApproverUserID,System.Int32</value>
+          <value>Approver,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>SP_GetProductDistributionHeader</Name>
+        <NameInSource>DS_ProductDistribution.SP_GetProductDistributionHeader</NameInSource>
+      </SP_GetProductDistributionHeader>
+    </DataSources>
+    <Relations isList="true" count="1">
+      <SP_GetProductDistributionHeader Ref="4" type="DataRelation" isKey="true">
+        <Alias>SP_GetProductDistributionHeader</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>ProductDistributionID</value>
+        </ChildColumns>
+        <ChildSource isRef="2" />
+        <Dictionary isRef="1" />
+        <Name>SP_GetProductDistributionHeader</Name>
+        <NameInSource>SP_GetProductDistributionHeader_SP_GetProductDistributionDetail</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>ProductDistributionID</value>
+        </ParentColumns>
+        <ParentSource isRef="3" />
+      </SP_GetProductDistributionHeader>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="17">
+      <value>,MyCompanyName,MyCompanyName,System.String,,False,False</value>
+      <value>,MyCompanyTaxCode,MyCompanyTaxCode,System.String,,False,False</value>
+      <value>,MyCompanyDirectorName,MyCompanyDirectorName,System.String,,False,False</value>
+      <value>,MyCompanyCountryCode,MyCompanyCountryCode,System.String,,False,False</value>
+      <value>,MyCompanyCountryName,MyCompanyCountryName,System.String,,False,False</value>
+      <value>,MyCompanyCity,MyCompanyCity,System.String,,False,False</value>
+      <value>,MyCompanyPostalCode,MyCompanyPostalCode,System.String,,False,False</value>
+      <value>,MyCompanyAddress,MyCompanyAddress,System.String,,False,False</value>
+      <value>,MyCompanyPhone,MyCompanyPhone,System.String,,False,False</value>
+      <value>,MyCompanyFax,MyCompanyFax,System.String,,False,False</value>
+      <value>,MyCompanyBankName,MyCompanyBankName,System.String,,False,False</value>
+      <value>,MyCompanyBankCode,MyCompanyBankCode,System.String,,False,False</value>
+      <value>,MyCompanyBankAccountNumber,MyCompanyBankAccountNumber,System.String,,False,False</value>
+      <value>,MyCompanyVATPayerFlag,MyCompanyVATPayerFlag,System.Boolean,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyCode,MyCompanyConditionalUnitCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyDefaultTradingCurrencyCode,MyCompanyDefaultTradingCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyRate,MyCompanyConditionalUnitCurrencyRate,System.Decimal,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <DataSP_GetProductDistributionHeader Ref="6" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,0.4,27.7,3.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Panel1 Ref="7" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,13.6,3</ClientRectangle>
+              <Components isList="true" count="5">
+                <Text2 Ref="8" type="Text" isKey="true">
+                  <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.4,1,10.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text2</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>{SP_GetProductDistributionHeader.FromBranchName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text2>
+                <Text4 Ref="9" type="Text" isKey="true">
+                  <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.4,2.2,10.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text4</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>{SP_GetProductDistributionHeader.ToBranchName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text4>
+                <Text1 Ref="10" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,13.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text1</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>შიდა გადაცემის ზედდებული № {SP_GetProductDistributionHeader.ProductDistributionID}     თარიღი: {Format("{0:yyyy.MM.dd}", SP_GetProductDistributionHeader.StartDate)}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text1>
+                <Text3 Ref="11" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,1,3.4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text3</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>გასცა ფილიალმა:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text3>
+                <Text5 Ref="12" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,2.2,3.4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text5</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="7" />
+                  <Text>მიიღო ფილიალმა:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text5>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+            </Panel1>
+            <Panel5 Ref="13" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,13.6,3</ClientRectangle>
+              <Components isList="true" count="5">
+                <Text20 Ref="14" type="Text" isKey="true">
+                  <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.4,1,10.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>954c8196b9d64417a1be31743baec7bb</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text20</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Text>{SP_GetProductDistributionHeader.FromBranchName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text20>
+                <Text21 Ref="15" type="Text" isKey="true">
+                  <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>3.4,2.2,10.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>c7c48dba850b4a5d855a58a9bee28269</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text21</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Text>{SP_GetProductDistributionHeader.ToBranchName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text21>
+                <Text22 Ref="16" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,13.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>12efe353e0494870bea24106fa313bfe</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text22</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Text>შიდა გადაცემის ზედდებული № {SP_GetProductDistributionHeader.ProductDistributionID}     თარიღი: {Format("{0:yyyy.MM.dd}", SP_GetProductDistributionHeader.StartDate)}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text22>
+                <Text23 Ref="17" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,1,3.4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>aa420c347f864a20ac67dd64d3eacfcc</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text23</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Text>გასცა ფილიალმა:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text23>
+                <Text24 Ref="18" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,2.2,3.4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>0b1fd64e89584af4b035d3ce152e7a24</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text24</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Text>მიიღო ფილიალმა:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text24>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>bae586ad5dcd4e5fbcc0e528a1fa91c3</Guid>
+              <Name>Panel5</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+            </Panel5>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>SP_GetProductDistributionHeader</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataSP_GetProductDistributionHeader</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataSP_GetProductDistributionHeader>
+        <HeaderSP_GetProductDistributionDetail Ref="19" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.6,27.7,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Panel2 Ref="20" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,13.6,0.8</ClientRectangle>
+              <Components isList="true" count="5">
+                <Text7 Ref="21" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,1.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text7</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="20" />
+                  <Text>№</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text7>
+                <Text9 Ref="22" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>1.2,0,6.6,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text9</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="20" />
+                  <Text>საქონლის დასახელება</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text9>
+                <Text11 Ref="23" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7.8,0,1.8,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text11</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="20" />
+                  <Text>რაოდ.</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text11>
+                <Text13 Ref="24" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.6,0,1.8,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text13</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="20" />
+                  <Text>ფასი</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text13>
+                <Text14 Ref="25" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.4,0,2.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>a843d7bd377e47d685b2e796215a4b10</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text14</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="20" />
+                  <Text>თანხა</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text14>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel2</Name>
+              <Page isRef="5" />
+              <Parent isRef="19" />
+            </Panel2>
+            <Panel6 Ref="26" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,13.6,0.8</ClientRectangle>
+              <Components isList="true" count="5">
+                <Text25 Ref="27" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,1.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>257247c9d7774d879de02fe85199441a</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text25</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="26" />
+                  <Text>№</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text25>
+                <Text26 Ref="28" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>1.2,0,6.6,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>182ee1f37b09460c8cea568a0b93e23a</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text26</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="26" />
+                  <Text>საქონლის დასახელება</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text26>
+                <Text27 Ref="29" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7.8,0,1.8,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>fc256a4248a04dbd988db200683b3dcb</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text27</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="26" />
+                  <Text>რაოდ.</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text27>
+                <Text28 Ref="30" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.6,0,1.8,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>565da9f4823b4dec9ef1ba21814858eb</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text28</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="26" />
+                  <Text>ფასი</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text28>
+                <Text29 Ref="31" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.4,0,2.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>272567b812504c40937e0bcc11ae8de2</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text29</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="26" />
+                  <Text>თანხა</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text29>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>25039859a1f04f41836be0131663978f</Guid>
+              <Name>Panel6</Name>
+              <Page isRef="5" />
+              <Parent isRef="19" />
+            </Panel6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderSP_GetProductDistributionDetail</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </HeaderSP_GetProductDistributionDetail>
+        <DataSP_GetProductDistributionDetail Ref="32" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,6.2,27.7,0.6</ClientRectangle>
+          <Components isList="true" count="2">
+            <Panel3 Ref="33" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,13.6,0.6</ClientRectangle>
+              <Components isList="true" count="5">
+                <Text6 Ref="34" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,1.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text6</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="33" />
+                  <Text>{Line}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text6>
+                <Text8 Ref="35" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>1.2,0,6.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text8</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="33" />
+                  <Text>{SP_GetProductDistributionDetail.MedicamentName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text8>
+                <Text10 Ref="36" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7.8,0,1.8,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text10</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="33" />
+                  <Text>{SP_GetProductDistributionDetail.DistributeQty}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="37" type="NumberFormat" isKey="true">
+                    <DecimalDigits>4</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text10>
+                <Text12 Ref="38" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.6,0,1.8,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text12</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="33" />
+                  <Text>{SP_GetProductDistributionDetail.UnitPrice}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="39" type="NumberFormat" isKey="true">
+                    <DecimalDigits>4</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text12>
+                <Text15 Ref="40" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.4,0,2.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text15</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="33" />
+                  <Text>{SP_GetProductDistributionDetail.LineTotal}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="41" type="NumberFormat" isKey="true">
+                    <DecimalDigits>4</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text15>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel3</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+            </Panel3>
+            <Panel7 Ref="42" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,13.6,0.6</ClientRectangle>
+              <Components isList="true" count="5">
+                <Text30 Ref="43" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,1.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>506cd209183e44d6a577b41a351140ce</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text30</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="42" />
+                  <Text>{Line}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text30>
+                <Text31 Ref="44" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>1.2,0,6.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>85eb369fe870488d985017dc138a349e</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text31</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="42" />
+                  <Text>{SP_GetProductDistributionDetail.MedicamentName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text31>
+                <Text32 Ref="45" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7.8,0,1.8,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>bee91c1548274483a33d82988e5f7c7f</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text32</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="42" />
+                  <Text>{SP_GetProductDistributionDetail.DistributeQty}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="46" type="NumberFormat" isKey="true">
+                    <DecimalDigits>4</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text32>
+                <Text33 Ref="47" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.6,0,1.8,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>a3c9ebb7894b47fc90925e92e1802ff8</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text33</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="42" />
+                  <Text>{SP_GetProductDistributionDetail.UnitPrice}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="48" type="NumberFormat" isKey="true">
+                    <DecimalDigits>4</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text33>
+                <Text34 Ref="49" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.4,0,2.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>c3c59cf9cdf74b818f226b672eb7716f</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text34</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="42" />
+                  <Text>{SP_GetProductDistributionDetail.LineTotal}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="50" type="NumberFormat" isKey="true">
+                    <DecimalDigits>4</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text34>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>8a5a4146eb0b420996b0e5e128f62965</Guid>
+              <Name>Panel7</Name>
+              <Page isRef="5" />
+              <Parent isRef="32" />
+            </Panel7>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName>SP_GetProductDistributionHeader_SP_GetProductDistributionDetail</DataRelationName>
+          <DataSourceName>SP_GetProductDistributionDetail</DataSourceName>
+          <Filters isList="true" count="0" />
+          <MasterComponent isRef="6" />
+          <Name>DataSP_GetProductDistributionDetail</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>OrdinalNumber</value>
+          </Sort>
+        </DataSP_GetProductDistributionDetail>
+        <FooterSP_GetProductDistributionDetail Ref="51" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.6,27.7,2.6</ClientRectangle>
+          <Components isList="true" count="2">
+            <Panel4 Ref="52" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,13.6,2.4</ClientRectangle>
+              <Components isList="true" count="6">
+                <Text16 Ref="53" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.4,0,2.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text16</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="52" />
+                  <Text>{Sum(SP_GetProductDistributionDetail.LineTotal)}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="54" type="NumberFormat" isKey="true">
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text16>
+                <Text17 Ref="55" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.8,0,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text17</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="52" />
+                  <Text>სულ:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text17>
+                <Text18 Ref="56" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,1.4,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text18</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="52" />
+                  <Text>ჩააბარა:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text18>
+                <Text19 Ref="57" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7,1.4,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>7f245341b4c944d5b9e13d5df1211083</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text19</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="52" />
+                  <Text>მიიღო:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text19>
+                <HorizontalLinePrimitive1 Ref="58" type="HorizontalLinePrimitive" isKey="true">
+                  <ClientRectangle>1.8,2,4.4,0.0254</ClientRectangle>
+                  <Color>Black</Color>
+                  <EndCap Ref="59" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </EndCap>
+                  <Name>HorizontalLinePrimitive1</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="52" />
+                  <StartCap Ref="60" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </StartCap>
+                  <Style>Dot</Style>
+                </HorizontalLinePrimitive1>
+                <HorizontalLinePrimitive2 Ref="61" type="HorizontalLinePrimitive" isKey="true">
+                  <ClientRectangle>8.8,2,4.4,0.0254</ClientRectangle>
+                  <Color>Black</Color>
+                  <EndCap Ref="62" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </EndCap>
+                  <Guid>dbf3f15d7e6d412d95aa9451cf7d5a97</Guid>
+                  <Name>HorizontalLinePrimitive2</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="52" />
+                  <StartCap Ref="63" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </StartCap>
+                  <Style>Dot</Style>
+                </HorizontalLinePrimitive2>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel4</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+            </Panel4>
+            <Panel8 Ref="64" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,0,13.6,2.4</ClientRectangle>
+              <Components isList="true" count="6">
+                <Text35 Ref="65" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>11.4,0,2.2,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>a129d2f039f2490db98e9ad4eb665b66</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text35</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="64" />
+                  <Text>{Sum(SP_GetProductDistributionDetail.LineTotal)}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="66" type="NumberFormat" isKey="true">
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator> </GroupSeparator>
+                    <NegativePattern>1</NegativePattern>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Text35>
+                <Text36 Ref="67" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>9.8,0,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,10</Font>
+                  <Guid>11898e02422742b2ab3a76cc00fe9c76</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text36</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="64" />
+                  <Text>სულ:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text36>
+                <Text37 Ref="68" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,1.4,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>3a7861a5b2ba44d1aac744b4cc81ef26</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text37</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="64" />
+                  <Text>ჩააბარა:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text37>
+                <Text38 Ref="69" type="Text" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>7,1.4,1.6,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>BPG Glaho Arial,9</Font>
+                  <Guid>4069c95d774a4a24b664143a27117bd8</Guid>
+                  <HorAlignment>Right</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text38</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="64" />
+                  <Text>მიიღო:</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text38>
+                <HorizontalLinePrimitive3 Ref="70" type="HorizontalLinePrimitive" isKey="true">
+                  <ClientRectangle>1.8,2,4.4,0.0254</ClientRectangle>
+                  <Color>Black</Color>
+                  <EndCap Ref="71" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </EndCap>
+                  <Guid>b55c45c3ea3e49028d123250605f2a49</Guid>
+                  <Name>HorizontalLinePrimitive3</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="64" />
+                  <StartCap Ref="72" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </StartCap>
+                  <Style>Dot</Style>
+                </HorizontalLinePrimitive3>
+                <HorizontalLinePrimitive4 Ref="73" type="HorizontalLinePrimitive" isKey="true">
+                  <ClientRectangle>8.8,2,4.4,0.0254</ClientRectangle>
+                  <Color>Black</Color>
+                  <EndCap Ref="74" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </EndCap>
+                  <Guid>67c6a2fbf95941d2a0f27e69c69dc3be</Guid>
+                  <Name>HorizontalLinePrimitive4</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="64" />
+                  <StartCap Ref="75" type="Cap" isKey="true">
+                    <Color>Black</Color>
+                  </StartCap>
+                  <Style>Dot</Style>
+                </HorizontalLinePrimitive4>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Guid>bdfb4e1a44b241ce9f29af9c0bd9b5a9</Guid>
+              <Name>Panel8</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+            </Panel8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterSP_GetProductDistributionDetail</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </FooterSP_GetProductDistributionDetail>
+        <VerticalLinePrimitive1 Ref="76" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>13.8,0,0.0254,19</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="77" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>55f521d5550a40dab3a90e9934072bb4</Guid>
+          <Locked>True</Locked>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <StartCap Ref="78" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+          <Style>Dash</Style>
+        </VerticalLinePrimitive1>
+        <EndPointPrimitive1 Ref="79" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>13.88,19,0,0</ClientRectangle>
+          <Name>EndPointPrimitive1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <ReferenceToGuid>55f521d5550a40dab3a90e9934072bb4</ReferenceToGuid>
+        </EndPointPrimitive1>
+        <StartPointPrimitive1 Ref="80" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>13.8,0,0,0</ClientRectangle>
+          <Name>StartPointPrimitive1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <ReferenceToGuid>55f521d5550a40dab3a90e9934072bb4</ReferenceToGuid>
+        </StartPointPrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2a54d7263bcd41b99fe3bdaf6ea00af2</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="81" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="82" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Rpt Product Distribution Detail</ReportAlias>
+  <ReportAuthor>Programmer.GE</ReportAuthor>
+  <ReportChanged>4/13/2010 8:41:06 PM</ReportChanged>
+  <ReportCreated>2/8/2009 7:58:55 PM</ReportCreated>
+  <ReportDescription>პროდუქციის დისტრიბუციის დეტალური რეპორტი</ReportDescription>
+  <ReportFile>D:\User\Documents\Projects\Apothex\Source\Class Library\Apothex.Reporting\Production\RptProductDistributionDetail.mrt</ReportFile>
+  <ReportGuid>07a15191d26b4fab9fac87ddda7165a1</ReportGuid>
+  <ReportName>RptProductDistributionDetail</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2010.1.700</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class RptProductDistributionDetail : Stimulsoft.Report.StiReport
+    {
+        
+        public RptProductDistributionDetail()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

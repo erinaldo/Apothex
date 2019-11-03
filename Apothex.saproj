@@ -1,0 +1,713 @@
+<SmartAssemblyProject ProjectId="{348110af-a607-4738-bef1-5c0f0e37fe09}" Version="2.0">
+    <MainAssemblyFileName>.\bin\Release\Apothex.exe</MainAssemblyFileName>
+    <FriendlyName>Apothex</FriendlyName>
+    <CompanyName>Programmer.GE</CompanyName>
+    <Configuration Name="Release">
+        <ApplicationName>Apothex</ApplicationName>
+        <Destination DestinationFileName=".\Install\Client\Bin\Apothex.exe" />
+        <Assemblies>
+            <Assembly AssemblyName="DevExpress.Utils.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.Data.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraBars.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraEditors.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.DataType, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Zek, Culture=neutral, PublicKeyToken=8aeae8d348f39942">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="1" />
+            </Assembly>
+            <Assembly AssemblyName="Stimulsoft.Report, Culture=neutral, PublicKeyToken=ebe6666cba19647a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Stimulsoft.Base, Culture=neutral, PublicKeyToken=ebe6666cba19647a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="LogicNP.CryptoLicensing, Culture=neutral, PublicKeyToken=4a3c0a4c668b48b4">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraGrid.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraLayout.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraPivotGrid.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.PivotGrid.v10.2.Core, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Stimulsoft.Report.Win, Culture=neutral, PublicKeyToken=ebe6666cba19647a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Stimulsoft.Controls.Win, Culture=neutral, PublicKeyToken=ebe6666cba19647a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Stimulsoft.Controls, Culture=neutral, PublicKeyToken=ebe6666cba19647a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.OfficeSkins.v10.2, Culture=neutral, PublicKeyToken=95fc6c5621878f0a">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Configuration, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Common, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Windows, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.DataManagment, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Contracts, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.SqlDataAccess, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Users, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Purchasing, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Dictionary, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.Xpo.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Reporting, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Xpo, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Import, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Sales, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Production, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Card, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Hedgehog, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Request, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Person, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Synchronization, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Pivot, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging Merge="0">
+                    <Pruning />
+                    <Obfuscation />
+                    <ControlFlow />
+                    <MemberRefsProxy />
+                    <ResourcesCompression Compress="0" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging>
+                    <ResourcesCompression Compress="0" />
+                    <MemberRefsProxy Proxy="1" />
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion>
+                            <Token Table="Namespace">
+                                <Assembly>Apothex</Assembly>
+                                <Module>Apothex.exe</Module>
+                                <Namespace />
+                            </Token>
+                            <Token Table="Namespace">
+                                <Assembly>Apothex</Assembly>
+                                <Module>Apothex.exe</Module>
+                                <Namespace>Apothex.Properties</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Apothex</Assembly>
+                                <Module>Apothex.exe</Module>
+                                <Name>SplashScreen</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Apothex</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Apothex</Assembly>
+                                <Module>Apothex.exe</Module>
+                                <Name>frmAbout</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Apothex</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Apothex</Assembly>
+                                <Module>Apothex.exe</Module>
+                                <Name>frmFeedback</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Apothex</Namespace>
+                            </Token>
+                            <Token Table="WholeType">
+                                <Assembly>Apothex</Assembly>
+                                <Module>Apothex.exe</Module>
+                                <Name>frmMain</Name>
+                                <ItemType>Class</ItemType>
+                                <Namespace>Apothex</Namespace>
+                            </Token>
+                        </Exclusion>
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="3" />
+                    <ResourcesPruning />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.AssemblyResolver, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.Zip, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="DebuggableAssembly, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartExceptionsCore, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartExceptionsWithUI1033, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraPrinting.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraRichEdit.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.RichEdit.v10.2.Core, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraTreeList.v10.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="{smartassembly}.MemoryManagement, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.HouseOfCards, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.StringsEncoding, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="{smartassembly}.ResourceResolver, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="Apothex.Cashbox, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="Apothex.WSDataAccess, Culture=neutral, PublicKeyToken=99e62e506cf619e7">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="mscorlib, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Configuration, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Xml, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.SqlXml, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Security, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Accessibility, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Runtime.Serialization.Formatters.Soap, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Deployment, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.VisualC, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Transactions, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.EnterpriseServices, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.DirectoryServices, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Runtime.Remoting, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Web, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Web.Services, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Design, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Drawing.Design, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.OracleClient, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Web.RegularExpressions, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.DirectoryServices.Protocols, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.ServiceProcess, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Configuration.Install, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Management, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.JScript, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Vsa, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="PoweredBySmartAssembly, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.ResourceResolver, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartAssembly.MemoryManagement, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="SmartTroubleshooting, Culture=neutral, PublicKeyToken=7f465a1c156d4d57">
+                <Merging>
+                    <Obfuscation>
+                        <Exclusion />
+                    </Obfuscation>
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.Utils.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.Data.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraPrinting.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.Printing.v11.2.Core, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.RichEdit.v11.2.Core, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraEditors.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraTreeList.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraBars.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraGrid.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraLayout.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.XtraPivotGrid.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.PivotGrid.v11.2.Core, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.BonusSkins.v11.2, Culture=neutral, PublicKeyToken=95fc6c5621878f0a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="DevExpress.Xpo.v11.2, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+                <Merging />
+                <Embedding Compress="1" Embed="1" Encrypt="0" />
+            </Assembly>
+            <Assembly AssemblyName="System.Core, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.ServiceModel, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="SMDiagnostics, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Runtime.Serialization, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.IdentityModel, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Messaging, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.IdentityModel.Selectors, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="Microsoft.Transactions.Bridge, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Xml.Linq, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="UIAutomationProvider, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="PresentationCFFRasterizer, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="PresentationUI, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="ReachFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Printing, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.Linq, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.DataSetExtensions, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+                <Merging />
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting EmailToBeNotified="giorgizek@gmail.com" ReportExceptions="0" Template="res:{SmartExceptions}.1033.dll" UseCustomTemplate="0" />
+            <FeatureUsageReporting ReportUsages="0" Template="res:SmartUsageWithUIConsentFirstRun1033.dll" />
+            <StrongNameSigning KeyFileName=".\Source\Class Library\Apothex.Key\StrongKey.snk" Sign="1" TamperProtect="1" />
+            <OtherProtections AddMetadataStream="1" SuppressIldasm="1" />
+            <StringsEncoding Compress="1" Encode="0" UseImprovedEncoding="1" />
+            <OtherOptimizations ManageMemory="1" SealClasses="1" />
+            <Debugging />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

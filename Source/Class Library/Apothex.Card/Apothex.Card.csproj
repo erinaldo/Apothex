@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9679067-122E-4508-A1CC-CCC3D60EEB5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apothex.Card</RootNamespace>
+    <AssemblyName>Apothex.Card</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\Apothex.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\bin\Debug\Apothex.Card.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\bin\Release\Apothex.Card.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zek, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8aeae8d348f39942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Zek\bin\Release\Zek.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBonusAccumulationBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBonusAccumulationBrowse.Designer.cs">
+      <DependentUpon>frmBonusAccumulationBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardBrowse.Designer.cs">
+      <DependentUpon>frmCardBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardEdit.Designer.cs">
+      <DependentUpon>frmCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardHandle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardHandle.Designer.cs">
+      <DependentUpon>frmCardHandle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardHandleBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardHandleBrowse.Designer.cs">
+      <DependentUpon>frmCardHandleBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardUnitRateBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardUnitRateBrowse.Designer.cs">
+      <DependentUpon>frmCardUnitRateBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardUnitRateEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardUnitRateEdit.Designer.cs">
+      <DependentUpon>frmCardUnitRateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardDiscountSchemaBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardDiscountSchemaBrowse.Designer.cs">
+      <DependentUpon>frmCardDiscountSchemaBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardDiscountSchemaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardDiscountSchemaEdit.Designer.cs">
+      <DependentUpon>frmCardDiscountSchemaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardTypeBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardTypeBrowse.Designer.cs">
+      <DependentUpon>frmCardTypeBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardTypeEdit.Designer.cs">
+      <DependentUpon>frmCardTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPointTransferBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPointTransferBrowse.Designer.cs">
+      <DependentUpon>frmPointTransferBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPointTransferEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPointTransferEdit.Designer.cs">
+      <DependentUpon>frmPointTransferEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Apothex.Key\StrongKey.snk">
+      <Link>StrongKey.snk</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Apothex.Common\Apothex.Common.csproj">
+      <Project>{B757681B-19FB-4349-A30C-D5D3594A6C3C}</Project>
+      <Name>Apothex.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.DataManagment\Apothex.DataManagment.csproj">
+      <Project>{EA3D539A-DFF8-40F8-BA8E-B17D37359B7E}</Project>
+      <Name>Apothex.DataManagment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.DataType\Apothex.DataType.csproj">
+      <Project>{EC6E9DE4-BF60-4A46-8728-99ABD2060BA4}</Project>
+      <Name>Apothex.DataType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Apothex.Windows\Apothex.Windows.csproj">
+      <Project>{8816EF95-208D-4C0A-8048-B0FCA8735FB0}</Project>
+      <Name>Apothex.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBonusAccumulationBrowse.resx">
+      <DependentUpon>frmBonusAccumulationBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardBrowse.resx">
+      <DependentUpon>frmCardBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardEdit.resx">
+      <DependentUpon>frmCardEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardHandle.resx">
+      <DependentUpon>frmCardHandle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardHandleBrowse.resx">
+      <DependentUpon>frmCardHandleBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardUnitRateBrowse.resx">
+      <DependentUpon>frmCardUnitRateBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardUnitRateEdit.resx">
+      <DependentUpon>frmCardUnitRateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardDiscountSchemaBrowse.resx">
+      <DependentUpon>frmCardDiscountSchemaBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardDiscountSchemaEdit.resx">
+      <DependentUpon>frmCardDiscountSchemaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardTypeBrowse.resx">
+      <DependentUpon>frmCardTypeBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardTypeEdit.resx">
+      <DependentUpon>frmCardTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPointTransferBrowse.resx">
+      <DependentUpon>frmPointTransferBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPointTransferEdit.resx">
+      <DependentUpon>frmPointTransferEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

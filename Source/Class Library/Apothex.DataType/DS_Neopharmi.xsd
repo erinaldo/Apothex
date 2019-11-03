@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Neopharmi" targetNamespace="http://tempuri.org/DS_Neopharmi.xsd" xmlns:mstns="http://tempuri.org/DS_Neopharmi.xsd" xmlns="http://tempuri.org/DS_Neopharmi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Neopharmi" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Neopharmi" msprop:Generator_UserDSName="DS_Neopharmi">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_Neopharmi" msprop:Generator_TableClassName="T_NeopharmiDataTable" msprop:Generator_TableVarName="tableT_Neopharmi" msprop:Generator_TablePropName="T_Neopharmi" msprop:Generator_RowDeletingName="T_NeopharmiRowDeleting" msprop:Generator_UserTableName="T_Neopharmi" msprop:Generator_RowChangingName="T_NeopharmiRowChanging" msprop:Generator_RowEvHandlerName="T_NeopharmiRowChangeEventHandler" msprop:Generator_RowDeletedName="T_NeopharmiRowDeleted" msprop:Generator_RowEvArgName="T_NeopharmiRowChangeEvent" msprop:Generator_RowChangedName="T_NeopharmiRowChanged" msprop:Generator_RowClassName="T_NeopharmiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="productsid" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="productsid" msprop:Generator_ColumnVarNameInTable="columnproductsid" msprop:Generator_ColumnPropNameInTable="productsidColumn" msprop:Generator_UserColumnName="productsid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="producerid" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="producerid" msprop:Generator_ColumnVarNameInTable="columnproducerid" msprop:Generator_ColumnPropNameInTable="produceridColumn" msprop:Generator_UserColumnName="producerid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="country_id" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="country_id" msprop:Generator_ColumnVarNameInTable="columncountry_id" msprop:Generator_ColumnPropNameInTable="country_idColumn" msprop:Generator_UserColumnName="country_id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="products_n" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="products_n" msprop:Generator_ColumnVarNameInTable="columnproducts_n" msprop:Generator_ColumnPropNameInTable="products_nColumn" msprop:Generator_UserColumnName="products_n">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="producer_n" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="producer_n" msprop:Generator_ColumnVarNameInTable="columnproducer_n" msprop:Generator_ColumnPropNameInTable="producer_nColumn" msprop:Generator_UserColumnName="producer_n">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="country_n" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="country_n" msprop:Generator_ColumnVarNameInTable="columncountry_n" msprop:Generator_ColumnPropNameInTable="country_nColumn" msprop:Generator_UserColumnName="country_n">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="icount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="icount" msprop:Generator_ColumnVarNameInTable="columnicount" msprop:Generator_ColumnPropNameInTable="icountColumn" msprop:Generator_UserColumnName="icount" type="xs:decimal" />
+              <xs:element name="priceg" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="priceg" msprop:Generator_ColumnVarNameInTable="columnpriceg" msprop:Generator_ColumnPropNameInTable="pricegColumn" msprop:Generator_UserColumnName="priceg" type="xs:decimal" />
+              <xs:element name="priceu" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="priceu" msprop:Generator_ColumnVarNameInTable="columnpriceu" msprop:Generator_ColumnPropNameInTable="priceuColumn" msprop:Generator_UserColumnName="priceu" type="xs:decimal" />
+              <xs:element name="svg" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="svg" msprop:Generator_ColumnVarNameInTable="columnsvg" msprop:Generator_ColumnPropNameInTable="svgColumn" msprop:Generator_UserColumnName="svg" type="xs:decimal" minOccurs="0" />
+              <xs:element name="svu" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="svu" msprop:Generator_ColumnVarNameInTable="columnsvu" msprop:Generator_ColumnPropNameInTable="svuColumn" msprop:Generator_UserColumnName="svu" type="xs:decimal" minOccurs="0" />
+              <xs:element name="discount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vg" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="vg" msprop:Generator_ColumnVarNameInTable="columnvg" msprop:Generator_ColumnPropNameInTable="vgColumn" msprop:Generator_UserColumnName="vg" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vu" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="vu" msprop:Generator_ColumnVarNameInTable="columnvu" msprop:Generator_ColumnPropNameInTable="vuColumn" msprop:Generator_UserColumnName="vu" type="xs:decimal" minOccurs="0" />
+              <xs:element name="lifedate" msprop:Generator_ColumnVarNameInTable="columnlifedate" msprop:Generator_ColumnPropNameInRow="lifedate" msprop:Generator_ColumnPropNameInTable="lifedateColumn" msprop:Generator_UserColumnName="lifedate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="code" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="code" msprop:Generator_ColumnVarNameInTable="columncode" msprop:Generator_ColumnPropNameInTable="codeColumn" msprop:Generator_UserColumnName="code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

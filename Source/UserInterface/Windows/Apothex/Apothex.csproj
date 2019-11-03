@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E9517815-AD17-4D93-981B-4D73E0D417FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apothex</RootNamespace>
+    <AssemblyName>Apothex</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>medical_bag16-48.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\Class Library\Apothex.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="LogicNP.CryptoLicensing, Version=5.3.0.0, Culture=neutral, PublicKeyToken=4a3c0a4c668b48b4">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Zek\bin\Release\LogicNP.CryptoLicensing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zek, Version=1.1.2.0, Culture=neutral, PublicKeyToken=8aeae8d348f39942, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Zek\bin\Release\Zek.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SA\Class1.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeedback.Designer.cs">
+      <DependentUpon>frmFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeedback.resx">
+      <DependentUpon>frmFeedback.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="medical_bag16-48.ico" />
+    <None Include="Resources\businesspeople2_24x24.png" />
+    <None Include="Resources\SpreadsheetNumbers24.png" />
+    <None Include="Resources\shelf_empty_24x24.png" />
+    <None Include="Resources\gear_24x24.png" />
+    <None Include="Resources\user_24x24.png" />
+    <None Include="Resources\package_24x24.png" />
+    <None Include="Resources\key2_16x16.png" />
+    <None Include="Resources\key_24x24.png" />
+    <None Include="Resources\lock_24x24.png" />
+    <None Include="Resources\data_floppy_disk_24x24.png" />
+    <None Include="Resources\cashier_24x24.png" />
+    <None Include="Resources\table_replace_24x24.png" />
+    <None Include="Resources\barcode_24x24.png" />
+    <None Include="Resources\shopping_cart_24x24.png" />
+    <None Include="Resources\form_blue_24x24.png" />
+    <None Include="Resources\fit_to_size_24x24.png" />
+    <None Include="Resources\hospital_24x24.png" />
+    <None Include="Resources\users_24x24.png" />
+    <None Include="Resources\mail_24x24.png" />
+    <None Include="Resources\exit_24x24.png" />
+    <None Include="Resources\clock_stop_24x24.png" />
+    <None Include="Resources\alarmclock_16x16.png" />
+    <None Include="Resources\key_16x16.png" />
+    <None Include="Resources\symbol_questionmark_24x24.png" />
+    <None Include="Resources\information_24x24.png" />
+    <None Include="Resources\server_16x16.png" />
+    <None Include="Resources\data_blue_16x16.png" />
+    <None Include="Resources\windows_24x24.png" />
+    <None Include="Resources\window_delete_24x24.png" />
+    <None Include="Resources\window_split_ver_24x24.png" />
+    <None Include="Resources\window_split_hor_24x24.png" />
+    <None Include="Resources\delete_24x24.png" />
+    <None Include="..\..\..\Class Library\Apothex.Key\StrongKey.snk">
+      <Link>StrongKey.snk</Link>
+    </None>
+    <None Include="Resources\Card Visa 24x24.png" />
+    <None Include="Resources\Medicine Pills 24x24.png" />
+    <None Include="Resources\SplashScreen.png" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\medical_bag16-48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Card\Apothex.Card.csproj">
+      <Project>{A9679067-122E-4508-A1CC-CCC3D60EEB5F}</Project>
+      <Name>Apothex.Card</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Cashbox\Apothex.Cashbox.csproj">
+      <Project>{B2E541BE-7128-4823-92C1-40BC2B403F3E}</Project>
+      <Name>Apothex.Cashbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Common\Apothex.Common.csproj">
+      <Project>{B757681B-19FB-4349-A30C-D5D3594A6C3C}</Project>
+      <Name>Apothex.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Configuration\Apothex.Configuration.csproj">
+      <Project>{9F4874BF-6FF7-433A-9CF1-36A9BCDD9C58}</Project>
+      <Name>Apothex.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.DataType\Apothex.DataType.csproj">
+      <Project>{EC6E9DE4-BF60-4A46-8728-99ABD2060BA4}</Project>
+      <Name>Apothex.DataType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Dictionary\Apothex.Dictionary.csproj">
+      <Project>{802C0FD1-B7D6-47B5-8BA0-8C5F4535289D}</Project>
+      <Name>Apothex.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Import\Apothex.Import.csproj">
+      <Project>{31DC8854-04F9-436A-BF39-76799E5AA742}</Project>
+      <Name>Apothex.Import</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Person\Apothex.Person.csproj">
+      <Project>{9AA406E0-6345-4B41-B499-84B688D74218}</Project>
+      <Name>Apothex.Person</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Pivot\Apothex.Pivot.csproj">
+      <Project>{947F43F2-D90E-48F8-AA15-2CF8E7A54E6A}</Project>
+      <Name>Apothex.Pivot</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Production\Apothex.Production.csproj">
+      <Project>{0199CA26-0AED-4734-95A5-BCC657847486}</Project>
+      <Name>Apothex.Production</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Purchasing\Apothex.Purchasing.csproj">
+      <Project>{6292651C-683B-402F-AB35-6ADFB6CA738F}</Project>
+      <Name>Apothex.Purchasing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Request\Apothex.Request.csproj">
+      <Project>{AC45C80C-55F2-4D64-A3B5-31ACC7382CA7}</Project>
+      <Name>Apothex.Request</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Sales\Apothex.Sales.csproj">
+      <Project>{4F0FE731-BA6A-4EAB-BE64-0F8942494269}</Project>
+      <Name>Apothex.Sales</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Synchronization\Apothex.Synchronization.csproj">
+      <Project>{B4E70BCD-4AA8-43D1-A269-708B823DDAC7}</Project>
+      <Name>Apothex.Synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Users\Apothex.Users.csproj">
+      <Project>{8C3E92DC-6D90-4EE2-BC85-4D615565EAEA}</Project>
+      <Name>Apothex.Users</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Class Library\Apothex.Windows\Apothex.Windows.csproj">
+      <Project>{8816EF95-208D-4C0A-8048-B0FCA8735FB0}</Project>
+      <Name>Apothex.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

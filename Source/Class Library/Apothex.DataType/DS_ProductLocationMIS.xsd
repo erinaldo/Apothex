@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_ProductLocationMIS" targetNamespace="http://tempuri.org/DS_ProductLocationMIS.xsd" xmlns:mstns="http://tempuri.org/DS_ProductLocationMIS.xsd" xmlns="http://tempuri.org/DS_ProductLocationMIS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ApothexConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApothexConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Apothex.DataType.Properties.Settings.GlobalReference.Default.ApothexConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_ProductLocationMIS" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_ProductLocationMIS" msprop:Generator_UserDSName="DS_ProductLocationMIS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_ProductLocationMIS" msprop:Generator_TableClassName="VW_ProductLocationMISDataTable" msprop:Generator_TableVarName="tableVW_ProductLocationMIS" msprop:Generator_TablePropName="VW_ProductLocationMIS" msprop:Generator_RowDeletingName="VW_ProductLocationMISRowDeleting" msprop:Generator_UserTableName="VW_ProductLocationMIS" msprop:Generator_RowChangingName="VW_ProductLocationMISRowChanging" msprop:Generator_RowEvHandlerName="VW_ProductLocationMISRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_ProductLocationMISRowDeleted" msprop:Generator_RowEvArgName="VW_ProductLocationMISRowChangeEvent" msprop:Generator_RowChangedName="VW_ProductLocationMISRowChanged" msprop:Generator_RowClassName="VW_ProductLocationMISRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BranchID" msprop:Generator_ColumnVarNameInTable="columnBranchID" msprop:Generator_ColumnPropNameInRow="BranchID" msprop:Generator_ColumnPropNameInTable="BranchIDColumn" msprop:Generator_UserColumnName="BranchID" type="xs:int" minOccurs="0" />
+              <xs:element name="BranchName" msprop:Generator_ColumnVarNameInTable="columnBranchName" msprop:Generator_ColumnPropNameInRow="BranchName" msprop:Generator_ColumnPropNameInTable="BranchNameColumn" msprop:Generator_UserColumnName="BranchName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedicamentName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="MedicamentName" msprop:Generator_ColumnVarNameInTable="columnMedicamentName" msprop:Generator_ColumnPropNameInTable="MedicamentNameColumn" msprop:Generator_UserColumnName="MedicamentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ListPrice" msprop:Generator_ColumnVarNameInTable="columnListPrice" msprop:Generator_ColumnPropNameInRow="ListPrice" msprop:Generator_ColumnPropNameInTable="ListPriceColumn" msprop:Generator_UserColumnName="ListPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Discount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NewDiscount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="NewDiscount" msprop:Generator_ColumnVarNameInTable="columnNewDiscount" msprop:Generator_ColumnPropNameInTable="NewDiscountColumn" msprop:Generator_UserColumnName="NewDiscount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CountryName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="CountryName" msprop:Generator_ColumnVarNameInTable="columnCountryName" msprop:Generator_ColumnPropNameInTable="CountryNameColumn" msprop:Generator_UserColumnName="CountryName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BrandName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="BrandName" msprop:Generator_ColumnVarNameInTable="columnBrandName" msprop:Generator_ColumnPropNameInTable="BrandNameColumn" msprop:Generator_UserColumnName="BrandName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ValidDate" msprop:Generator_ColumnVarNameInTable="columnValidDate" msprop:Generator_ColumnPropNameInRow="ValidDate" msprop:Generator_ColumnPropNameInTable="ValidDateColumn" msprop:Generator_UserColumnName="ValidDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Vendor" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="Vendor" msprop:Generator_ColumnVarNameInTable="columnVendor" msprop:Generator_ColumnPropNameInTable="VendorColumn" msprop:Generator_UserColumnName="Vendor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

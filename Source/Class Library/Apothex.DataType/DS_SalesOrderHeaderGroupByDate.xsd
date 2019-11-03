@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_SalesOrderHeaderGroupByDate" targetNamespace="http://tempuri.org/DS_SalesOrderHeaderGroupByDate.xsd" xmlns:mstns="http://tempuri.org/DS_SalesOrderHeaderGroupByDate.xsd" xmlns="http://tempuri.org/DS_SalesOrderHeaderGroupByDate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ApothexConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApothexConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Apothex.DataType.Properties.Settings.GlobalReference.Default.ApothexConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_SalesOrderHeaderGroupByDate" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_SalesOrderHeaderGroupByDate" msprop:Generator_UserDSName="DS_SalesOrderHeaderGroupByDate">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_SalesOrderHeaderGroupByDate" msprop:Generator_UserTableName="T_SalesOrderHeaderGroupByDate" msprop:Generator_RowEvArgName="T_SalesOrderHeaderGroupByDateRowChangeEvent" msprop:Generator_TableVarName="tableT_SalesOrderHeaderGroupByDate" msprop:Generator_TablePropName="T_SalesOrderHeaderGroupByDate" msprop:Generator_RowDeletingName="T_SalesOrderHeaderGroupByDateRowDeleting" msprop:Generator_RowChangingName="T_SalesOrderHeaderGroupByDateRowChanging" msprop:Generator_RowDeletedName="T_SalesOrderHeaderGroupByDateRowDeleted" msprop:Generator_TableClassName="T_SalesOrderHeaderGroupByDateDataTable" msprop:Generator_RowChangedName="T_SalesOrderHeaderGroupByDateRowChanged" msprop:Generator_RowEvHandlerName="T_SalesOrderHeaderGroupByDateRowChangeEventHandler" msprop:Generator_RowClassName="T_SalesOrderHeaderGroupByDateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BranchID" msprop:Generator_ColumnVarNameInTable="columnBranchID" msprop:Generator_ColumnPropNameInRow="BranchID" msprop:Generator_ColumnPropNameInTable="BranchIDColumn" msprop:Generator_UserColumnName="BranchID" type="xs:int" />
+              <xs:element name="BranchName" msprop:Generator_ColumnVarNameInTable="columnBranchName" msprop:Generator_ColumnPropNameInRow="BranchName" msprop:Generator_ColumnPropNameInTable="BranchNameColumn" msprop:Generator_UserColumnName="BranchName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PaymentMethodName" msprop:Generator_ColumnVarNameInTable="columnPaymentMethodName" msprop:Generator_ColumnPropNameInRow="PaymentMethodName" msprop:Generator_ColumnPropNameInTable="PaymentMethodNameColumn" msprop:Generator_UserColumnName="PaymentMethodName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalesSubTotal" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SalesSubTotal" msprop:Generator_ColumnVarNameInTable="columnSalesSubTotal" msprop:Generator_ColumnPropNameInTable="SalesSubTotalColumn" msprop:Generator_UserColumnName="SalesSubTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesTaxAmt" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SalesTaxAmt" msprop:Generator_ColumnVarNameInTable="columnSalesTaxAmt" msprop:Generator_ColumnPropNameInTable="SalesTaxAmtColumn" msprop:Generator_UserColumnName="SalesTaxAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesFreight" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SalesFreight" msprop:Generator_ColumnVarNameInTable="columnSalesFreight" msprop:Generator_ColumnPropNameInTable="SalesFreightColumn" msprop:Generator_UserColumnName="SalesFreight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesTotalDue" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="SalesTotalDue" msprop:Generator_ColumnVarNameInTable="columnSalesTotalDue" msprop:Generator_ColumnPropNameInTable="SalesTotalDueColumn" msprop:Generator_UserColumnName="SalesTotalDue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AccumulatedAmount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="AccumulatedAmount" msprop:Generator_ColumnVarNameInTable="columnAccumulatedAmount" msprop:Generator_ColumnPropNameInTable="AccumulatedAmountColumn" msprop:Generator_UserColumnName="AccumulatedAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ExpensedAmount" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ExpensedAmount" msprop:Generator_ColumnVarNameInTable="columnExpensedAmount" msprop:Generator_ColumnPropNameInTable="ExpensedAmountColumn" msprop:Generator_UserColumnName="ExpensedAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PurchaseSubTotal" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="PurchaseSubTotal" msprop:Generator_ColumnVarNameInTable="columnPurchaseSubTotal" msprop:Generator_ColumnPropNameInTable="PurchaseSubTotalColumn" msprop:Generator_UserColumnName="PurchaseSubTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PurchaseTaxAmt" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="PurchaseTaxAmt" msprop:Generator_ColumnVarNameInTable="columnPurchaseTaxAmt" msprop:Generator_ColumnPropNameInTable="PurchaseTaxAmtColumn" msprop:Generator_UserColumnName="PurchaseTaxAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CurrencyCode" msprop:Generator_ColumnVarNameInTable="columnCurrencyCode" msprop:Generator_ColumnPropNameInRow="CurrencyCode" msprop:Generator_ColumnPropNameInTable="CurrencyCodeColumn" msprop:Generator_UserColumnName="CurrencyCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_SalesOrderDetailList" targetNamespace="http://tempuri.org/DS_SalesOrderDetailList.xsd" xmlns:mstns="http://tempuri.org/DS_SalesOrderDetailList.xsd" xmlns="http://tempuri.org/DS_SalesOrderDetailList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ApothexConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApothexConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Apothex.DataType.Properties.Settings.GlobalReference.Default.ApothexConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_SalesOrderDetailList" msdata:IsDataSet="true" msdata:Locale="" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_SalesOrderDetailList" msprop:Generator_UserDSName="DS_SalesOrderDetailList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_RptHeader" msprop:Generator_TableClassName="T_RptHeaderDataTable" msprop:Generator_TableVarName="tableT_RptHeader" msprop:Generator_TablePropName="T_RptHeader" msprop:Generator_RowDeletingName="T_RptHeaderRowDeleting" msprop:Generator_UserTableName="T_RptHeader" msprop:Generator_RowChangingName="T_RptHeaderRowChanging" msprop:Generator_RowEvHandlerName="T_RptHeaderRowChangeEventHandler" msprop:Generator_RowDeletedName="T_RptHeaderRowDeleted" msprop:Generator_RowEvArgName="T_RptHeaderRowChangeEvent" msprop:Generator_RowChangedName="T_RptHeaderRowChanged" msprop:Generator_RowClassName="T_RptHeaderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date1" msprop:Generator_ColumnVarNameInTable="columnDate1" msprop:Generator_ColumnPropNameInRow="Date1" msprop:Generator_ColumnPropNameInTable="Date1Column" msprop:Generator_UserColumnName="Date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Date2" msprop:Generator_ColumnVarNameInTable="columnDate2" msprop:Generator_ColumnPropNameInRow="Date2" msprop:Generator_ColumnPropNameInTable="Date2Column" msprop:Generator_UserColumnName="Date2" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VW_SalesOrderDetailList" msprop:Generator_TableClassName="VW_SalesOrderDetailListDataTable" msprop:Generator_TableVarName="tableVW_SalesOrderDetailList" msprop:Generator_TablePropName="VW_SalesOrderDetailList" msprop:Generator_RowDeletingName="VW_SalesOrderDetailListRowDeleting" msprop:Generator_UserTableName="VW_SalesOrderDetailList" msprop:Generator_RowChangingName="VW_SalesOrderDetailListRowChanging" msprop:Generator_RowEvHandlerName="VW_SalesOrderDetailListRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_SalesOrderDetailListRowDeleted" msprop:Generator_RowEvArgName="VW_SalesOrderDetailListRowChangeEvent" msprop:Generator_RowChangedName="VW_SalesOrderDetailListRowChanged" msprop:Generator_RowClassName="VW_SalesOrderDetailListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesOrderID" msprop:Generator_ColumnVarNameInTable="columnSalesOrderID" msprop:Generator_ColumnPropNameInRow="SalesOrderID" msprop:Generator_ColumnPropNameInTable="SalesOrderIDColumn" msprop:Generator_UserColumnName="SalesOrderID" type="xs:int" />
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedicamentName" msprop:Generator_ColumnVarNameInTable="columnMedicamentName" msprop:Generator_ColumnPropNameInRow="MedicamentName" msprop:Generator_ColumnPropNameInTable="MedicamentNameColumn" msprop:Generator_UserColumnName="MedicamentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SaleQty" msprop:Generator_ColumnVarNameInTable="columnSaleQty" msprop:Generator_ColumnPropNameInRow="SaleQty" msprop:Generator_ColumnPropNameInTable="SaleQtyColumn" msprop:Generator_UserColumnName="SaleQty" type="xs:decimal" />
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" />
+              <xs:element name="UnitPriceDiscount" msprop:Generator_ColumnVarNameInTable="columnUnitPriceDiscount" msprop:Generator_ColumnPropNameInRow="UnitPriceDiscount" msprop:Generator_ColumnPropNameInTable="UnitPriceDiscountColumn" msprop:Generator_UserColumnName="UnitPriceDiscount" type="xs:decimal" />
+              <xs:element name="LineTotal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLineTotal" msprop:Generator_ColumnPropNameInRow="LineTotal" msprop:Generator_ColumnPropNameInTable="LineTotalColumn" msprop:Generator_UserColumnName="LineTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CurrencyCode" msprop:Generator_ColumnVarNameInTable="columnCurrencyCode" msprop:Generator_ColumnPropNameInRow="CurrencyCode" msprop:Generator_ColumnPropNameInTable="CurrencyCodeColumn" msprop:Generator_UserColumnName="CurrencyCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentMethodID" msprop:Generator_ColumnVarNameInTable="columnPaymentMethodID" msprop:Generator_ColumnPropNameInRow="PaymentMethodID" msprop:Generator_ColumnPropNameInTable="PaymentMethodIDColumn" msprop:Generator_UserColumnName="PaymentMethodID" type="xs:int" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

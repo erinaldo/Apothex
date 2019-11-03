@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <VW_Product Ref="2" type="DataTableSource" isKey="true">
+        <Alias>VW_Product</Alias>
+        <Columns isList="true" count="35">
+          <value>ProductID,System.Int32</value>
+          <value>PurchaseOrderDetailID,System.Guid</value>
+          <value>MedicamentCategoryID,System.Int32</value>
+          <value>MedicamentCategoryName,System.String</value>
+          <value>MedicamentSubcategoryID,System.Int32</value>
+          <value>MedicamentSubcategoryName,System.String</value>
+          <value>MedicamentID,System.Int32</value>
+          <value>MedicamentName,System.String</value>
+          <value>Serie,System.String</value>
+          <value>PurchaseUnitPriceCU,System.Decimal</value>
+          <value>SaleUnitPriceCU,System.Decimal</value>
+          <value>Quantity,System.Decimal</value>
+          <value>UnitsInStock,System.Decimal</value>
+          <value>FinishedGoodsFlag,System.Boolean</value>
+          <value>SafetyStockLevel,System.Int16</value>
+          <value>ValidDate,System.DateTime</value>
+          <value>Color,System.String</value>
+          <value>CountryCode,System.String</value>
+          <value>CountryName,System.String</value>
+          <value>Size,System.String</value>
+          <value>SizeUnitMeasureCode,System.String</value>
+          <value>Weight,System.Decimal</value>
+          <value>WeightUnitMeasureCode,System.String</value>
+          <value>Class,System.String</value>
+          <value>Style,System.String</value>
+          <value>SellStartDate,System.DateTime</value>
+          <value>SellEndDate,System.DateTime</value>
+          <value>DiscontinuedDate,System.DateTime</value>
+          <value>Status,System.Byte</value>
+          <value>ModifiedUserID,System.Int32</value>
+          <value>Modifier,System.String</value>
+          <value>ModifiedDate,System.DateTime</value>
+          <value>PurchaseUnitPrice,System.Decimal</value>
+          <value>SaleUnitPrice,System.Decimal</value>
+          <value>Action,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>VW_Product</Name>
+        <NameInSource>DS_Production.VW_Product</NameInSource>
+      </VW_Product>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Columns>2</Columns>
+      <Components isList="true" count="3">
+        <HeaderVW_Product Ref="4" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,13.85,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <HeaderVW_Product_MedicamentName Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,6.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_Product_MedicamentName</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>მედიკამენტი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_Product_MedicamentName>
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.8,0,7,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>შტრიხ-კოდი</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderVW_Product</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderVW_Product>
+        <DataVW_Product Ref="7" type="DataBand" isKey="true">
+          <Border>All;Black;0.5;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,13.85,2</ClientRectangle>
+          <Components isList="true" count="2">
+            <DataVW_Product_ProductID Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,6.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_Product_ProductID</Name>
+              <Page isRef="3" />
+              <Parent isRef="7" />
+              <Text>{VW_Product.ProductID}. {VW_Product.MedicamentName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_Product_ProductID>
+            <BarCode1 Ref="9" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="10" type="Stimulsoft.Report.BarCodes.StiEAN128aBarCodeType" isKey="true" />
+              <Border>None;Black;1;Dot;False;4;Black</Border>
+              <ClientRectangle>6.8,0,7,2</ClientRectangle>
+              <Code>UPC{VW_Product.ProductID}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8,Bold,Pixel</Font>
+              <ForeColor>Black</ForeColor>
+              <Name>BarCode1</Name>
+              <Page isRef="3" />
+              <Parent isRef="7" />
+              <VertAlignment>Center</VertAlignment>
+            </BarCode1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>VW_Product</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataVW_Product</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataVW_Product>
+        <FooterVW_Product Ref="11" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.8,13.85,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>FooterVW_Product</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </FooterVW_Product>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>53d0355db4644f9d9ba6c964bafb28f0</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <Page isRef="3" />
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="12" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="13" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Rpt Product Bar Code</ReportAlias>
+  <ReportChanged>6/8/2009 10:23:13 AM</ReportChanged>
+  <ReportCreated>3/24/2009 9:40:37 PM</ReportCreated>
+  <ReportGuid>a72f7a1d9c114cba9636e983d7cbe128</ReportGuid>
+  <ReportName>RptProductBarCode</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2009.1.359</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class RptProductBarCode : Stimulsoft.Report.StiReport
+    {
+        
+        public RptProductBarCode()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
