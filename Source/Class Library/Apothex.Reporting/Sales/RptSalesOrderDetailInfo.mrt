@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <VW_SalesOrderDetailInfo Ref="2" type="DataTableSource" isKey="true">
+        <Alias>VW_SalesOrderDetailInfo</Alias>
+        <Columns isList="true" count="57">
+          <value>SalesOrderDetailID,System.Guid</value>
+          <value>SalesOrderID,System.Int32</value>
+          <value>ProductLocationID,System.Int32</value>
+          <value>BranchID,System.Int32</value>
+          <value>BranchName,System.String</value>
+          <value>OrderDate,System.DateTime</value>
+          <value>CustomerID,System.Int32</value>
+          <value>CustomerName,System.String</value>
+          <value>SaleQty,System.Decimal</value>
+          <value>UnitPrice,System.Decimal</value>
+          <value>UnitPriceDiscount,System.Decimal</value>
+          <value>LineTotal,System.Decimal</value>
+          <value>OrdinalNumber,System.Int16</value>
+          <value>Status,System.Byte</value>
+          <value>ModifiedUserID,System.Int32</value>
+          <value>Modifier,System.String</value>
+          <value>ModifiedDate,System.DateTime</value>
+          <value>ProductID,System.Int32</value>
+          <value>PurchaseOrderDetailID,System.Guid</value>
+          <value>MedicamentID,System.Int32</value>
+          <value>ProductNumber,System.String</value>
+          <value>MedicamentName,System.String</value>
+          <value>MedicamentCategoryID,System.Int32</value>
+          <value>MedicamentCategoryName,System.String</value>
+          <value>MedicamentSubcategoryID,System.Int32</value>
+          <value>MedicamentSubcategoryName,System.String</value>
+          <value>Quantity,System.Decimal</value>
+          <value>StandardCost,System.Decimal</value>
+          <value>ListPrice,System.Decimal</value>
+          <value>DealerPrice,System.Decimal</value>
+          <value>DiscountPct,System.Decimal</value>
+          <value>TaxRate,System.Decimal</value>
+          <value>ValidDate,System.DateTime</value>
+          <value>CountryCode,System.String</value>
+          <value>CountryName,System.String</value>
+          <value>BrandID,System.Int32</value>
+          <value>BrandName,System.String</value>
+          <value>Serie,System.String</value>
+          <value>MakeFlag,System.Boolean</value>
+          <value>FinishedGoodsFlag,System.Boolean</value>
+          <value>Color,System.String</value>
+          <value>SafetyStockLevel,System.Int16</value>
+          <value>ReorderPoint,System.Int16</value>
+          <value>Size,System.String</value>
+          <value>SizeRange,System.String</value>
+          <value>SizeUnitMeasureCode,System.String</value>
+          <value>Weight,System.Decimal</value>
+          <value>WeightUnitMeasureCode,System.String</value>
+          <value>DaysToManufacture,System.Int32</value>
+          <value>ProductLine,System.String</value>
+          <value>Class,System.String</value>
+          <value>Style,System.String</value>
+          <value>ProductModelID,System.Int32</value>
+          <value>SellStartDate,System.DateTime</value>
+          <value>SellEndDate,System.DateTime</value>
+          <value>DiscontinuedDate,System.DateTime</value>
+          <value>UnitsInStock,System.Int16</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>VW_SalesOrderDetailInfo</Name>
+        <NameInSource>DS_Sales.VW_SalesOrderDetailInfo</NameInSource>
+      </VW_SalesOrderDetailInfo>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="17">
+      <value>,MyCompanyName,MyCompanyName,System.String,,False,False</value>
+      <value>,MyCompanyTaxCode,MyCompanyTaxCode,System.String,,False,False</value>
+      <value>,MyCompanyDirectorName,MyCompanyDirectorName,System.String,,False,False</value>
+      <value>,MyCompanyCountryCode,MyCompanyCountryCode,System.String,,False,False</value>
+      <value>,MyCompanyCountryName,MyCompanyCountryName,System.String,,False,False</value>
+      <value>,MyCompanyCity,MyCompanyCity,System.String,,False,False</value>
+      <value>,MyCompanyPostalCode,MyCompanyPostalCode,System.String,,False,False</value>
+      <value>,MyCompanyAddress,MyCompanyAddress,System.String,,False,False</value>
+      <value>,MyCompanyPhone,MyCompanyPhone,System.String,,False,False</value>
+      <value>,MyCompanyFax,MyCompanyFax,System.String,,False,False</value>
+      <value>,MyCompanyBankName,MyCompanyBankName,System.String,,False,False</value>
+      <value>,MyCompanyBankCode,MyCompanyBankCode,System.String,,False,False</value>
+      <value>,MyCompanyBankAccountNumber,MyCompanyBankAccountNumber,System.String,,False,False</value>
+      <value>,MyCompanyVATPayerFlag,MyCompanyVATPayerFlag,System.Boolean,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyCode,MyCompanyConditionalUnitCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyDefaultTradingCurrencyCode,MyCompanyDefaultTradingCurrencyCode,System.String,,False,False</value>
+      <value>,MyCompanyConditionalUnitCurrencyRate,MyCompanyConditionalUnitCurrencyRate,System.Decimal,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageFooterBand1 Ref="4" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,27.1,19,0.6</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text3 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Guid>98d564088e19468b8a13fb930b209780</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{PageNofM}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>aaa8ae54769b4b049f5c531048b975aa</Guid>
+          <Name>PageFooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageFooterBand1>
+        <HeaderVW_SalesOrderDetailInfo Ref="6" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <HeaderVW_SalesOrderDetailInfo_MedicamentName Ref="7" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,9.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_SalesOrderDetailInfo_MedicamentName</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>მედიკამენტი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_SalesOrderDetailInfo_MedicamentName>
+            <HeaderVW_SalesOrderDetailInfo_CountryName Ref="8" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.8,0,4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_SalesOrderDetailInfo_CountryName</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>ქვეყანა</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_SalesOrderDetailInfo_CountryName>
+            <HeaderVW_SalesOrderDetailInfo_SaleQty Ref="9" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.8,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_SalesOrderDetailInfo_SaleQty</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>გაყიდული
+რაოდ.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_SalesOrderDetailInfo_SaleQty>
+            <HeaderVW_SalesOrderDetailInfo_Quantity Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,2.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderVW_SalesOrderDetailInfo_Quantity</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>ნაშთი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderVW_SalesOrderDetailInfo_Quantity>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderVW_SalesOrderDetailInfo</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderVW_SalesOrderDetailInfo>
+        <DataVW_SalesOrderDetailInfo Ref="11" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,19,0.6</ClientRectangle>
+          <Components isList="true" count="4">
+            <DataVW_SalesOrderDetailInfo_MedicamentName Ref="12" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,9.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_SalesOrderDetailInfo_MedicamentName</Name>
+              <Page isRef="3" />
+              <Parent isRef="11" />
+              <Text>{VW_SalesOrderDetailInfo.MedicamentName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_SalesOrderDetailInfo_MedicamentName>
+            <DataVW_SalesOrderDetailInfo_CountryName Ref="13" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.8,0,4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_SalesOrderDetailInfo_CountryName</Name>
+              <Page isRef="3" />
+              <Parent isRef="11" />
+              <Text>{VW_SalesOrderDetailInfo.CountryName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_SalesOrderDetailInfo_CountryName>
+            <DataVW_SalesOrderDetailInfo_SaleQty Ref="14" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>13.8,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_SalesOrderDetailInfo_SaleQty</Name>
+              <Page isRef="3" />
+              <Parent isRef="11" />
+              <Text>{VW_SalesOrderDetailInfo.SaleQty}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="15" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_SalesOrderDetailInfo_SaleQty>
+            <DataVW_SalesOrderDetailInfo_Quantity Ref="16" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataVW_SalesOrderDetailInfo_Quantity</Name>
+              <Page isRef="3" />
+              <Parent isRef="11" />
+              <Text>{VW_SalesOrderDetailInfo.Quantity}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="17" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataVW_SalesOrderDetailInfo_Quantity>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>VW_SalesOrderDetailInfo</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataVW_SalesOrderDetailInfo</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataVW_SalesOrderDetailInfo>
+        <FooterVW_SalesOrderDetailInfo Ref="18" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="4">
+            <FooterVW_SalesOrderDetailInfo_MedicamentName Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>FooterVW_SalesOrderDetailInfo_MedicamentName</Name>
+              <Page isRef="3" />
+              <Parent isRef="18" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </FooterVW_SalesOrderDetailInfo_MedicamentName>
+            <FooterVW_SalesOrderDetailInfo_CountryName Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>FooterVW_SalesOrderDetailInfo_CountryName</Name>
+              <Page isRef="3" />
+              <Parent isRef="18" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </FooterVW_SalesOrderDetailInfo_CountryName>
+            <FooterVW_SalesOrderDetailInfo_SaleQty Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,0,4.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>FooterVW_SalesOrderDetailInfo_SaleQty</Name>
+              <Page isRef="3" />
+              <Parent isRef="18" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </FooterVW_SalesOrderDetailInfo_SaleQty>
+            <FooterVW_SalesOrderDetailInfo_Quantity Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>BPG Glaho Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>FooterVW_SalesOrderDetailInfo_Quantity</Name>
+              <Page isRef="3" />
+              <Parent isRef="18" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </FooterVW_SalesOrderDetailInfo_Quantity>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterVW_SalesOrderDetailInfo</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </FooterVW_SalesOrderDetailInfo>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>fe7a8278e9664c07ba291423149a5d7d</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Page isRef="3" />
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="23" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="24" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Rpt Sales Order Detail Info</ReportAlias>
+  <ReportAuthor>Programmer.GE</ReportAuthor>
+  <ReportChanged>6/29/2009 11:00:32 PM</ReportChanged>
+  <ReportCreated>6/29/2009 10:04:53 PM</ReportCreated>
+  <ReportDescription>გაყიდვების დეტალური ინფორმაცია</ReportDescription>
+  <ReportGuid>994aab3125de4ed8b1e5512fa21b244b</ReportGuid>
+  <ReportName>RptSalesOrderDetailInfo</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2009.1.359</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class RptSalesOrderDetailInfo : Stimulsoft.Report.StiReport
+    {
+        
+        public RptSalesOrderDetailInfo()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
